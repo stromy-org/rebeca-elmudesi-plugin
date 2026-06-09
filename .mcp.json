@@ -1,0 +1,9 @@
+{
+  "_comment": "Rendered from .agents/mcp.json by scripts/render-mcp.py \u2014 DO NOT EDIT BY HAND. Edit .agents/mcp.json and re-run.",
+  "mcpServers": {
+    "asset-broker": {
+      "type": "http",
+      "url": "https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp"
+    }
+  }
+}

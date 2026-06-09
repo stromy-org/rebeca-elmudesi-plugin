@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "tier": "output",
+    "displayName": "Rebeca Elmúdesi",
+    "tagline": "Visual artist — Madrid",
+    "industry": "Fine art / painting",
+    "audience": "Collectors, galleries, curators, commission clients",
+    "locale": ["en", "es-ES"],
+    "direction": "Quiet, editorial, gallery-neutral. Work rooted in looking.",
+    "archetype": { "primary": "Creator", "secondary": "Sage" }
+  },
+  "colors": {
+    "primary": "#000000",
+    "accent": "#ff0000",
+    "background": "#ffffff",
+    "backgroundAlt": "#ededed",
+    "text": "#111111",
+    "textLight": "#767676",
+    "line": "#000000"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Helvetica Neue",
+      "fallback": "Helvetica, Arial, sans-serif",
+      "weight": "500"
+    },
+    "body": {
+      "family": "Helvetica Neue",
+      "fallback": "Helvetica, Arial, sans-serif",
+      "weight": "400"
+    },
+    "mono": {
+      "family": "Helvetica Neue",
+      "fallback": "Helvetica, Arial, sans-serif",
+      "weight": "400"
+    }
+  }
+}

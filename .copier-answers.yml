@@ -1,0 +1,17 @@
+# Changes here will be overwritten by Copier; DO NOT edit manually.
+_commit: 1f315e7
+_src_path: scaffolds/claude-plugin-template
+author_name: William Masquelier
+client_name: Rebeca Elmudesi
+client_slug: rebecaelmudesi
+description: Claude Code plugin for Rebeca Elmudesi — self-service website and brand
+    asset editing via asset-broker
+github_org: stromy-org
+include_mcp: false
+include_node: true
+include_python: true
+mcp_servers: []
+plugin_name: Rebeca Elmudesi Asset Editor
+plugin_slug: rebeca-elmudesi
+provider_targets: claude
+version: 0.1.0

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://gofastmcp.com/public/schemas/mcp-config.schema.json",
+  "_notes": "Canonical MCP server config for rebeca-elmudesi. Edit only this file. Run scripts/render-mcp.py to regenerate .mcp.json / .gemini/settings.json / .codex/config.toml / .vscode/mcp.json.",
+  "servers": {
+    "asset-broker": {
+      "transport": "http",
+      "url": "https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp",
+      "_consumed_by": ["claude", "codex", "gemini"],
+      "_codex_via": "mcp-remote",
+      "_gemini_via": "mcp-remote",
+      "_notes": "Authenticated client-asset broker — propose reviewed website/brand edits as GitHub PRs (asset-editor skill, fetched via fs_read). Per-user OAuth via Microsoft Entra ID. Requires the stromy-asset-broker GitHub App to be installed on the target repos (rebeca-elmudesi-website, client-data)."
+    }
+  }
+}
