@@ -1,6 +1,74 @@
 {
   "version": "1.0",
-  "fonts": [],
+  "fonts": [
+    {
+      "family": "TeX Gyre Heros",
+      "weight": 700,
+      "style": "normal",
+      "sha256": "b170162835f4efc288886dd4231406dc47e19b614cf4416836635599d44a7d60",
+      "mime": "font/otf",
+      "name": "texgyreheros-bold.otf"
+    },
+    {
+      "family": "TeX Gyre Heros",
+      "weight": 400,
+      "style": "normal",
+      "sha256": "6ae1a09d5a940367b7aaaa91ee8bd8a2c333bfe193e7096e23f931357d62081f",
+      "mime": "font/otf",
+      "name": "texgyreheros-regular.otf"
+    }
+  ],
   "logos": [],
-  "images": []
+  "images": [
+    {
+      "name": "amsterdam--landscape-1.jpg",
+      "sha256": "6bf2d9ef49274c4bfc3297dfaa308e0ef4e1b236f210984af25fd173a0b90eb3",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "amsterdam--mouthful.jpg",
+      "sha256": "afcbd6889aaecc7f5c9e7631b9b1357c693f84aef07378f853a572466e13271f",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "amsterdam--natures-paintbrush-blue.jpg",
+      "sha256": "280dbdc5736fb3d79646ca6a09245af61f9d65f68fbaf01beb1af4d1b11f3512",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "naive-optimism--everything-i-will-ever-need.jpg",
+      "sha256": "19d6f66f9e6f074fe59b235fe8ca3231f92eab109282e8f7693f0638bd02b39e",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "naive-optimism--what-are-you-looking-at.jpg",
+      "sha256": "6858128e7916c758601cdedeffd1b229f876bb2ea93327e3e1dbc21facc26e63",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "si-me-ves-te-veo--de-narices.jpg",
+      "sha256": "14882c6cb7d0c2f19a6670ce8c41af0b008fabd281e61776e6658d9bcba2e5e9",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "si-me-ves-te-veo--habitacion-que-habla.jpg",
+      "sha256": "6ba96b02a6bb686bb0c7be8d2152a4eae460bebf40690ecb88e3671a0db8cf84",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "si-me-ves-te-veo--lo-estamos-viendo-todo.jpg",
+      "sha256": "25d29b87c0342853ff2657a7d0931f1bdec2b7770ab17c140124d1bb5097dea9",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "si-me-ves-te-veo--metro-de-madrid.jpg",
+      "sha256": "21aed91ca2af876f9889699358d0958b9b0bff9a39b71b708578a3d3bd769f3a",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "si-me-ves-te-veo--the-naked-eye.jpg",
+      "sha256": "5ccd3a9073af01c361a222aedcbd6a6ac9648c838f8d266299eecb6ecf8c6759",
+      "mime": "image/jpeg"
+    }
+  ]
 }

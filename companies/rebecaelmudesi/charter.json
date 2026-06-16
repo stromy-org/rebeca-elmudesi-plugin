@@ -1,6 +1,6 @@
 {
   "meta": {
-    "tier": "output",
+    "tier": "producer",
     "displayName": "Rebeca Elmúdesi",
     "tagline": "Visual artist — Madrid",
     "industry": "Fine art / painting",
@@ -11,28 +11,81 @@
   },
   "colors": {
     "primary": "#000000",
-    "accent": "#ff0000",
+    "accent": "#fe0200",
     "background": "#ffffff",
-    "backgroundAlt": "#ededed",
-    "text": "#111111",
-    "textLight": "#767676",
+    "backgroundAlt": "#ffffff",
+    "text": "#000000",
+    "textLight": "#b4b4b4",
     "line": "#000000"
   },
   "fonts": {
     "heading": {
-      "family": "Helvetica Neue",
+      "family": "TeX Gyre Heros",
       "fallback": "Helvetica, Arial, sans-serif",
-      "weight": "500"
+      "weight": "700"
     },
     "body": {
-      "family": "Helvetica Neue",
+      "family": "TeX Gyre Heros",
       "fallback": "Helvetica, Arial, sans-serif",
       "weight": "400"
     },
     "mono": {
-      "family": "Helvetica Neue",
+      "family": "TeX Gyre Heros",
       "fallback": "Helvetica, Arial, sans-serif",
       "weight": "400"
     }
+  },
+  "identity": {
+    "archetype": { "primary": "Creator", "secondary": "Sage" },
+    "essence": "Quiet, editorial, gallery-neutral. Work rooted in looking.",
+    "positioning": "Madrid-based visual artist presenting contemporary painting with curatorial restraint."
+  },
+  "expression": {
+    "source": "client-input",
+    "confidence": "high",
+    "status": "approved",
+    "principles": [
+      "Well-curated, spacious, contemporary, professional.",
+      "Give each artwork room to breathe; the work leads and the layout recedes.",
+      "Justify body text.",
+      "Mirror the structure of a professional art portfolio; the website's sections define the document's sections.",
+      "Source every fact, title, and description only from Rebeca's own input and website; never invent copy.",
+      "Attribute each description to its correct artwork."
+    ],
+    "visualAxes": {
+      "density": "spacious",
+      "tone": "editorial",
+      "ornament": "none"
+    },
+    "signatureElements": [
+      "Generous white space on a pure white ground",
+      "Thin black hairline rules",
+      "Thin, even margins on every side; images contained, never bleeding to the edge",
+      "Justified text blocks",
+      "Faithful image reproduction at true aspect ratio"
+    ],
+    "antiPatterns": [
+      "Full-bleed images or any bleed to the page edges",
+      "Stretched or distorted images (any change to the true aspect ratio)",
+      "Drop shadows",
+      "Rounded corners",
+      "Clip art or stock photography",
+      "Invented or unsourced titles, descriptions, or copy"
+    ],
+    "requiredMotifs": [],
+    "evidence": [
+      "Client email 2026-06-16: 'well curated, spacious, contemporary and professional... all the texts justified, the artworks with space to breathe... thin margins in the borders (no bleeding to the sides)... no dropshadows or additional nonsense. do not stretch the images either, keep everything faithful... source all the info ONLY from my imput and website.'"
+    ]
+  },
+  "presentation": {
+    "aspectRatio": "16:9"
+  },
+  "document": {
+    "headingColor": "#000000",
+    "tableHeaderColor": "#000000"
+  },
+  "formatting": {
+    "autoContrastText": true,
+    "accentCycleColors": ["#fe0200"]
   }
 }

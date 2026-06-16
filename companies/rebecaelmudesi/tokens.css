@@ -1,0 +1,144 @@
+/* ============================================================
+   Rebeca Elmúdesi Design Tokens
+   Visual artist — Madrid
+
+   Version:  1.0.0
+   Date:     2026-06-16
+   Brand:    Rebeca Elmúdesi
+   Primary:  Black (#000000) — ink, rules, text
+   Accent:   Red (#fe0200) — used sparingly
+   Ground:   Pure white (#ffffff) everywhere
+
+   Direction: well-curated, spacious, contemporary, professional.
+   Justified text, thin even margins (no bleed), hairline rules,
+   no drop shadows, no rounded corners, faithful image aspect.
+   All values derive from the Rebeca Elmúdesi brand charter.
+   ============================================================ */
+
+:root {
+
+  /* -- Primary Palette ---------------------------------------- */
+  --brand-primary:        #000000;
+  --brand-dark:           #000000;
+  --brand-accent:         #fe0200;
+  --brand-accent-hover:   #d40200;
+  --brand-text:           #000000;
+  --brand-text-light:     #b4b4b4;
+  --brand-secondary:      #000000;
+  --brand-background:     #ffffff;
+  --brand-background-alt: #ffffff;
+  --brand-line:           #000000;
+
+  /* -- Neutral Scale (grayscale; captions use --neutral-400) -- */
+  --neutral-50:           #fafafa;
+  --neutral-100:          #f2f2f2;
+  --neutral-200:          #e6e6e6;
+  --neutral-300:          #d2d2d2;
+  --neutral-400:          #b4b4b4;   /* = --brand-text-light (captions, measurements) */
+  --neutral-500:          #8c8c8c;
+  --neutral-600:          #6e6e6e;
+  --neutral-700:          #4a4a4a;
+  --neutral-800:          #262626;
+  --neutral-900:          #000000;
+  --neutral-white:        #ffffff;
+
+  /* -- Semantic Colors (restrained; brand is monochrome) ------ */
+  --success:              #2e7d4f;
+  --warning:              #b58900;
+  --error:                #fe0200;   /* reuse the brand red */
+  --info:                 #3a3a3a;
+
+  /* -- Typography --------------------------------------------- */
+  --font-heading:         'TeX Gyre Heros', Helvetica, Arial, sans-serif;
+  --font-body:            'TeX Gyre Heros', Helvetica, Arial, sans-serif;
+  --font-mono:            'TeX Gyre Heros', Helvetica, Arial, sans-serif;
+
+  /* -- Font Weights ------------------------------------------- */
+  --weight-regular:       400;
+  --weight-medium:        400;
+  --weight-semibold:      700;
+  --weight-bold:          700;
+
+  /* -- Type Scale --------------------------------------------- */
+  --text-display-xl:      3rem;        /* 48px */
+  --text-display:         2.5rem;      /* 40px */
+  --text-h1:              2rem;        /* 32px */
+  --text-h2:              1.75rem;     /* 28px */
+  --text-h3:              1.5rem;      /* 24px */
+  --text-h4:              1.25rem;     /* 20px */
+  --text-body-lg:         1.125rem;    /* 18px */
+  --text-body:            1rem;        /* 16px */
+  --text-body-sm:         0.875rem;    /* 14px */
+  --text-caption:         0.75rem;     /* 12px — titles, descriptions, measurements */
+  --text-overline:        0.6875rem;   /* 11px */
+
+  /* -- Line Heights ------------------------------------------- */
+  --leading-display:      1.15;
+  --leading-h1:           1.2;
+  --leading-h2:           1.25;
+  --leading-h3:           1.3;
+  --leading-body:         1.6;
+  --leading-caption:      1.4;
+
+  /* -- Letter Spacing ----------------------------------------- */
+  --tracking-tight:       -0.01em;
+  --tracking-normal:      0;
+  --tracking-wide:        0.04em;
+  --tracking-wider:       0.08em;      /* overlines / labels */
+
+  /* -- Text Alignment (brand default: justify body copy) ------ */
+  --text-align-body:      justify;
+  --text-align-heading:   left;
+
+  /* -- Spacing Scale (4px base; brand reads spacious) --------- */
+  --space-1:              0.25rem;     /* 4px */
+  --space-2:              0.5rem;      /* 8px */
+  --space-3:              0.75rem;     /* 12px */
+  --space-4:              1rem;        /* 16px */
+  --space-6:              1.5rem;      /* 24px */
+  --space-8:              2rem;        /* 32px */
+  --space-12:             3rem;        /* 48px */
+  --space-16:             4rem;        /* 64px */
+  --space-24:             6rem;        /* 96px */
+  --space-32:             8rem;        /* 128px */
+
+  /* -- Border Radius (none; square corners only) -------------- */
+  --radius-sm:            0;
+  --radius-md:            0;
+  --radius-lg:            0;
+  --radius-xl:            0;
+  --radius-full:          0;
+
+  /* -- Shadows (none; the brand forbids drop shadows) --------- */
+  --shadow-sm:            none;
+  --shadow-md:            none;
+  --shadow-lg:            none;
+  --shadow-xl:            none;
+
+  /* -- Hairline Rules ----------------------------------------- */
+  --rule-color:           #000000;
+  --rule-weight:          1px;
+  --rule-weight-thin:     0.5px;
+
+  /* -- Layout (thin, even margins; images contained, no bleed)  */
+  --content-max:          1100px;
+  --page-margin:          18mm;        /* thin, even page margin */
+  --slide-margin:         40pt;
+  --doc-margin:           18mm;
+  --image-fit:            contain;     /* never crop/stretch — preserve aspect */
+
+  /* -- Transitions -------------------------------------------- */
+  --transition-fast:      150ms ease;
+  --transition-normal:    250ms ease;
+
+  /* -- Surface & Text (light only; brand is white-ground) ----- */
+  --surface:              var(--neutral-white);
+  --surface-raised:       var(--neutral-white);
+  --surface-overlay:      var(--neutral-white);
+  --text-primary:         var(--neutral-900);
+  --text-secondary:       var(--neutral-400);
+  --text-tertiary:        var(--neutral-400);
+  --text-inverse:         var(--neutral-white);
+  --border:               var(--neutral-900);
+  --border-subtle:        var(--neutral-200);
+}
