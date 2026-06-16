@@ -9,14 +9,6 @@
       "_codex_via": "mcp-remote",
       "_gemini_via": "mcp-remote",
       "_notes": "Hosted format skills (format-pptx, format-pptx-hd, format-docx, format-pdf, format-pdf-hd, format-html-hd, format-html-reveal, format-xlsx, format-mermaid, format-diagram, format-chart, format-prepare-document, format-remotion-video). Server-side render tools (render_pptx/render_pdf/render_deck) resolve brand fonts/images from assets.json sha256 handles. Skill bodies fetched at runtime via fs_read — see skills/<name>/SKILL.md stubs."
-    },
-    "asset-broker": {
-      "transport": "http",
-      "url": "https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp",
-      "_consumed_by": ["claude", "codex", "gemini"],
-      "_codex_via": "mcp-remote",
-      "_gemini_via": "mcp-remote",
-      "_notes": "Authenticated client-asset broker — propose reviewed website/brand edits as GitHub PRs (asset-editor skill, fetched via fs_read). Per-user OAuth via Microsoft Entra ID. Requires the stromy-asset-broker GitHub App to be installed on the target repos (rebeca-elmudesi-website, client-data)."
     }
   }
 }
