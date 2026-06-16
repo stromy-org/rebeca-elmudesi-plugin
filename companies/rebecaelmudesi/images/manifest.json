@@ -1,0 +1,124 @@
+{
+  "_note": "Curated brand-image library for Rebeca Elmúdesi. Each entry is one of her own artworks, sourced from the rebeca-elmudesi-website (src/assets/works/<series>/<painting>/01-cover.jpg) with title/medium/dimensions/year copied verbatim from the site's content.ts. Per the brand: never overlay, crop, or stretch these — reproduce faithfully at true aspect ratio. roles guide layout placement only.",
+  "overlay": null,
+  "logoVariantOnImage": null,
+  "images": [
+    {
+      "file": "si-me-ves-te-veo--habitacion-que-habla.jpg",
+      "roles": ["cover", "hero"],
+      "orientation": "landscape",
+      "series": "Si me ves, te veo (If you see me, I see you)",
+      "title": "Habitación que habla",
+      "medium": "Oil pastel and acrylic on canvas",
+      "dimensions": "130 × 195 cm",
+      "year": "2025",
+      "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/habitacion-que-habla/01-cover.jpg",
+      "confidence": "high"
+    },
+    {
+      "file": "si-me-ves-te-veo--lo-estamos-viendo-todo.jpg",
+      "roles": ["feature"],
+      "orientation": "portrait",
+      "series": "Si me ves, te veo (If you see me, I see you)",
+      "title": "Lo estamos viendo todo",
+      "medium": "Oil pastel and acrylic on canvas",
+      "dimensions": "100 × 130 cm",
+      "year": "2025",
+      "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/lo-estamos-viendo-todo/01-cover.jpg",
+      "confidence": "high"
+    },
+    {
+      "file": "si-me-ves-te-veo--the-naked-eye.jpg",
+      "roles": ["feature"],
+      "orientation": "landscape",
+      "series": "Si me ves, te veo (If you see me, I see you)",
+      "title": "The naked eye",
+      "medium": "Oil pastel, acrylic and marble dust on canvas",
+      "dimensions": "100 × 130 cm",
+      "year": "2025",
+      "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/the-naked-eye/01-cover.jpg",
+      "confidence": "high"
+    },
+    {
+      "file": "si-me-ves-te-veo--de-narices.jpg",
+      "roles": ["detail"],
+      "orientation": "portrait",
+      "series": "Si me ves, te veo (If you see me, I see you)",
+      "title": "De narices",
+      "medium": "Oil pastel and acrylic on canvas",
+      "dimensions": "81 × 61 cm",
+      "year": "2025",
+      "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/de-narices/01-cover.jpg",
+      "confidence": "high"
+    },
+    {
+      "file": "si-me-ves-te-veo--metro-de-madrid.jpg",
+      "roles": ["section"],
+      "orientation": "landscape",
+      "series": "Si me ves, te veo (If you see me, I see you)",
+      "title": "Metro de Madrid",
+      "medium": "Oil pastel and acrylic on canvas",
+      "dimensions": "60 × 40 cm",
+      "year": "2025",
+      "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/metro-de-madrid/01-cover.jpg",
+      "confidence": "high"
+    },
+    {
+      "file": "amsterdam--mouthful.jpg",
+      "roles": ["feature"],
+      "orientation": "landscape",
+      "series": "Amsterdam — Through the Eyes of a Foreigner",
+      "title": "Amsterdam Mouthful",
+      "medium": "Oil pastel on wood",
+      "dimensions": "37.5 × 30.2 cm (each panel)",
+      "source": "rebeca-elmudesi-website/src/assets/works/amsterdam/amsterdam-mouthful/01-cover.jpg",
+      "confidence": "high"
+    },
+    {
+      "file": "amsterdam--landscape-1.jpg",
+      "roles": ["section", "background"],
+      "orientation": "panoramic",
+      "series": "Amsterdam — Through the Eyes of a Foreigner",
+      "title": "Amsterdam Landscape 1",
+      "medium": "Oil pastel on wood",
+      "dimensions": "120 × 31 cm",
+      "source": "rebeca-elmudesi-website/src/assets/works/amsterdam/amsterdam-landscape-1/01-cover.jpg",
+      "confidence": "high"
+    },
+    {
+      "file": "amsterdam--natures-paintbrush-blue.jpg",
+      "roles": ["detail"],
+      "orientation": "square",
+      "series": "Amsterdam — Through the Eyes of a Foreigner",
+      "title": "Nature's Paintbrush, Blue",
+      "medium": "Oil pastel on wood",
+      "dimensions": "50 × 70 cm",
+      "source": "rebeca-elmudesi-website/src/assets/works/amsterdam/natures-paintbrush-blue/01-cover.jpg",
+      "confidence": "high"
+    },
+    {
+      "file": "naive-optimism--everything-i-will-ever-need.jpg",
+      "roles": ["feature"],
+      "orientation": "portrait",
+      "series": "Naive Optimism",
+      "title": "Everything I Will Ever Need Is Within Me",
+      "medium": "Acrylic and oil pastel on canvas",
+      "dimensions": "61 × 76.6 cm",
+      "year": "2024",
+      "source": "rebeca-elmudesi-website/src/assets/works/naive-optimism/01-everything-i-will-ever-need.jpg",
+      "confidence": "high"
+    },
+    {
+      "file": "naive-optimism--what-are-you-looking-at.jpg",
+      "roles": ["detail"],
+      "orientation": "portrait",
+      "series": "Naive Optimism",
+      "title": "What Are You Looking At?",
+      "medium": "Acrylic and oil pastel on canvas",
+      "dimensions": "40 × 51 cm",
+      "year": "2024",
+      "source": "rebeca-elmudesi-website/src/assets/works/naive-optimism/06-what-are-you-looking-at.jpg",
+      "confidence": "high"
+    }
+  ]
+}
