@@ -1,0 +1,25 @@
+<!--
+  Rebeca Elmúdesi anchor shell. Consumed by format-pptx-hd / format-pdf-hd render-anchors.
+  ÉPURÉ BRAND: white ground, black text, hairline rules, thin even margins, NO bleed, NO overlay on artwork.
+  Injected: {{TOKENS_CSS}} {{FONT_FACES}} {{LOGO_URL}} {{MARK_URL}} {{TITLE}} {{SUBTITLE}} {{OVERLINE}} {{PAGE}} {{PAGES}} {{DATE}} {{CONFIDENTIALITY}}
+-->
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+{{TOKENS_CSS}}
+{{FONT_FACES}}
+html,body{margin:0;padding:0}
+body{width:1280px;height:960px;background:var(--brand-background,#fff);color:var(--brand-text,#000);
+ font-family:var(--font-body,Helvetica,Arial,sans-serif);position:relative}
+.center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.center img{width:88px;height:88px}
+.contact{margin-top:28pt;text-align:center;font-size:12pt;line-height:1.7}
+.contact a{color:var(--brand-accent,#fe0200);text-decoration:none}
+.contact .g{color:var(--brand-text-light,#b4b4b4)}
+</style></head><body><div class="center">
+ <img src="{{MARK_URL}}" alt="">
+ <div class="contact">
+  <div>Rebeca Elmúdesi</div>
+  <div class="g">Visual artist — Madrid</div>
+  <div style="margin-top:8pt"><a href="mailto:rebeca.elmudesi@gmail.com">rebeca.elmudesi@gmail.com</a></div>
+  <div class="g">@elmudesi.studio</div>
+ </div>
+</div></body></html>

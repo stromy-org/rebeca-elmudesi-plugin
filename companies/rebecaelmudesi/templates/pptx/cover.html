@@ -1,0 +1,31 @@
+<!--
+  Rebeca Elmúdesi anchor shell. Consumed by format-pptx-hd / format-pdf-hd render-anchors.
+  ÉPURÉ BRAND: white ground, black text, hairline rules, thin even margins, NO bleed, NO overlay on artwork.
+  Injected: {{TOKENS_CSS}} {{FONT_FACES}} {{LOGO_URL}} {{MARK_URL}} {{TITLE}} {{SUBTITLE}} {{OVERLINE}} {{PAGE}} {{PAGES}} {{DATE}} {{CONFIDENTIALITY}}
+-->
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+{{TOKENS_CSS}}
+{{FONT_FACES}}
+html,body{margin:0;padding:0}
+body{width:1280px;height:960px;background:var(--brand-background,#fff);color:var(--brand-text,#000);
+ font-family:var(--font-body,Helvetica,Arial,sans-serif);position:relative;overflow:hidden}
+.frame{position:absolute;inset:64px;border:0}
+.logo img{height:34pt;width:auto}
+.overline{font-family:var(--font-body);font-size:11pt;letter-spacing:.18em;text-transform:uppercase;
+ color:var(--brand-text-light,#b4b4b4);margin-top:64px}
+h1{font-family:var(--font-heading);font-weight:400;font-size:60pt;line-height:1.06;margin:18pt 0 0;
+ color:var(--brand-text,#000);max-width:1000px}
+.rule{height:1px;background:var(--brand-line,#000);margin-top:28pt;width:120px}
+.subtitle{font-size:16pt;color:var(--brand-text-light,#b4b4b4);margin-top:22pt;max-width:80%}
+.meta{position:absolute;bottom:64px;left:64px;right:64px;display:flex;justify-content:space-between;
+ font-size:9pt;color:var(--brand-text-light,#b4b4b4);font-family:var(--font-body)}
+</style></head><body>
+ <div class="frame">
+  <div class="logo"><img src="{{LOGO_URL}}" alt=""></div>
+  <div class="overline">{{OVERLINE}}</div>
+  <h1>{{TITLE}}</h1>
+  <div class="rule"></div>
+  <p class="subtitle">{{SUBTITLE}}</p>
+ </div>
+ <div class="meta"><span>{{CONFIDENTIALITY}}</span><span>{{DATE}}</span></div>
+</body></html>

@@ -1,0 +1,20 @@
+<!--
+  Rebeca Elmúdesi anchor shell. Consumed by format-pptx-hd / format-pdf-hd render-anchors.
+  ÉPURÉ BRAND: white ground, black text, hairline rules, thin even margins, NO bleed, NO overlay on artwork.
+  Injected: {{TOKENS_CSS}} {{FONT_FACES}} {{LOGO_URL}} {{MARK_URL}} {{TITLE}} {{SUBTITLE}} {{OVERLINE}} {{PAGE}} {{PAGES}} {{DATE}} {{CONFIDENTIALITY}}
+-->
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+{{TOKENS_CSS}}
+{{FONT_FACES}}
+html,body{margin:0;padding:0}
+body{width:1280px;height:960px;background:var(--brand-background,#fff);color:var(--brand-text,#000);
+ font-family:var(--font-body,Helvetica,Arial,sans-serif);position:relative}
+.wrap{position:absolute;inset:64px;display:flex;flex-direction:column;justify-content:center}
+.num{font-size:11pt;letter-spacing:.18em;color:var(--brand-accent,#fe0200)}
+.rule{height:1px;background:var(--brand-line,#000);margin:18pt 0;width:100%}
+h2{font-family:var(--font-heading);font-weight:400;font-size:44pt;margin:0;max-width:1000px}
+</style></head><body><div class="wrap">
+ <div class="num">{{OVERLINE}}</div>
+ <div class="rule"></div>
+ <h2>{{TITLE}}</h2>
+</div></body></html>

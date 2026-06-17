@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "additional_banned_phrases": [
+    "stunning",
+    "breathtaking",
+    "must-see",
+    "must see",
+    "visionary",
+    "masterpiece",
+    "captivating",
+    "iconic",
+    "showstopping",
+    "unmissable",
+    "one-of-a-kind",
+    "world-class"
+  ],
+  "additional_banned_substrings": [],
+  "notes": "Rebeca Elmúdesi L2: additive-only bans on art-market hype, on top of the L1 baseline. Mirrors the 'Do not' list in voice-profile.md. The overriding rule is the sourcing constraint: never invent copy — source only from the artist's own input and website."
+}

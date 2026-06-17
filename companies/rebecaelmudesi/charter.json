@@ -5,9 +5,15 @@
     "tagline": "Visual artist — Madrid",
     "industry": "Fine art / painting",
     "audience": "Collectors, galleries, curators, commission clients",
-    "locale": ["en", "es-ES"],
+    "locale": [
+      "en",
+      "es-ES"
+    ],
     "direction": "Quiet, editorial, gallery-neutral. Work rooted in looking.",
-    "archetype": { "primary": "Creator", "secondary": "Sage" }
+    "archetype": {
+      "primary": "creator",
+      "secondary": "sage"
+    }
   },
   "colors": {
     "primary": "#000000",
@@ -16,7 +22,11 @@
     "backgroundAlt": "#ffffff",
     "text": "#000000",
     "textLight": "#b4b4b4",
-    "line": "#000000"
+    "line": "#000000",
+    "secondary": "#000000",
+    "success": "#2e7d4f",
+    "warning": "#b58900",
+    "error": "#fe0200"
   },
   "fonts": {
     "heading": {
@@ -35,13 +45,31 @@
       "weight": "400"
     }
   },
+  "logo": {
+    "primary": "logos/wordmark.svg",
+    "white": "logos/wordmark-white.svg",
+    "accent": "logos/wordmark-accent.svg",
+    "mark": "logos/mark.svg",
+    "markBlack": "logos/mark-black.svg",
+    "markOnDark": "logos/mark-on-dark.svg",
+    "markBare": "logos/mark-bare.svg",
+    "png": "logos/wordmark.png",
+    "whitePng": "logos/wordmark-white.png",
+    "markPng": "logos/mark.png",
+    "favicon": "logos/mark.svg"
+  },
   "identity": {
-    "archetype": { "primary": "Creator", "secondary": "Sage" },
+    "archetype": {
+      "primary": "creator",
+      "secondary": "sage",
+      "status": "approved",
+      "rationale": "Creator (the making/looking practice) lead; Sage (perception, the gaze, identity) secondary — from the artist's own statement."
+    },
     "essence": "Quiet, editorial, gallery-neutral. Work rooted in looking.",
     "positioning": "Madrid-based visual artist presenting contemporary painting with curatorial restraint."
   },
   "expression": {
-    "source": "client-input",
+    "source": "client_supplied",
     "confidence": "high",
     "status": "approved",
     "principles": [
@@ -74,18 +102,57 @@
     ],
     "requiredMotifs": [],
     "evidence": [
-      "Client email 2026-06-16: 'well curated, spacious, contemporary and professional... all the texts justified, the artworks with space to breathe... thin margins in the borders (no bleeding to the sides)... no dropshadows or additional nonsense. do not stretch the images either, keep everything faithful... source all the info ONLY from my imput and website.'"
+      {
+        "path": ".build-history/BUILD_LOG.md",
+        "kind": "client_email",
+        "sourceAuthority": "client_supplied",
+        "confidence": "high",
+        "surface": "all",
+        "freshness": "current",
+        "note": "Client email 2026-06-16 (subject 'Re: Setting up your branded workspace'): well curated, spacious, contemporary and professional... all the texts justified, the artworks with space to breathe... thin margins in the borders (no bleeding to the sides)... no dropshadows or additional nonsense. do not stretch the images either, keep everything faithful... source all the info ONLY from my imput and website."
+      }
     ]
   },
   "presentation": {
-    "aspectRatio": "16:9"
+    "aspectRatio": "4:3"
   },
   "document": {
     "headingColor": "#000000",
-    "tableHeaderColor": "#000000"
+    "tableHeaderColor": "#000000",
+    "paperSize": "A4",
+    "margins": {
+      "top": "0.71in",
+      "bottom": "0.71in",
+      "left": "0.71in",
+      "right": "0.71in"
+    }
   },
   "formatting": {
     "autoContrastText": true,
-    "accentCycleColors": ["#fe0200"]
+    "accentCycleColors": [
+      "#fe0200"
+    ]
+  },
+  "templates": {
+    "docx": {
+      "styles": "templates/docx/styles.docx",
+      "letterhead": "templates/docx/letterhead.docx"
+    },
+    "pptx": {
+      "cover": "templates/pptx/cover.html",
+      "sectionDivider": "templates/pptx/section-divider.html",
+      "content": "templates/pptx/content.html",
+      "closing": "templates/pptx/closing.html",
+      "footerBar": "templates/pptx/footer-bar.html"
+    },
+    "pdf": {
+      "cover": "templates/pdf/cover.html",
+      "sectionDivider": "templates/pdf/section-divider.html",
+      "footer": "templates/pdf/footer.html"
+    },
+    "html": {
+      "emailSignature": "templates/html/email-signature.html",
+      "signatureFragments": "templates/html/signatures/"
+    }
   }
 }

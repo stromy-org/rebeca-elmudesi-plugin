@@ -2,16 +2,10 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "8d3f39b306423ff2900ae09fc90053f392d7c624520977102ad77dfb0aad7d56",
+    "charterSha": "72e9e404cc3b29400168a60888fd793509e55e825e96decf606e9a6326d0f73b",
     "compiler": "1.0"
   },
   "tier": "producer",
-  "fallbacksUsed": [
-    "colors.secondary",
-    "colors.success",
-    "colors.warning",
-    "colors.error"
-  ],
   "colors": {
     "primary": "#000000",
     "accent": "#fe0200",
@@ -20,10 +14,10 @@
     "text": "#000000",
     "textLight": "#b4b4b4",
     "line": "#000000",
-    "secondary": "#fe0200",
-    "success": "#2e7d32",
-    "warning": "#ed6c02",
-    "error": "#d32f2f"
+    "secondary": "#000000",
+    "success": "#2e7d4f",
+    "warning": "#b58900",
+    "error": "#fe0200"
   },
   "typography": {
     "heading": {
@@ -47,8 +41,13 @@
     "essence": "Quiet, editorial, gallery-neutral. Work rooted in looking.",
     "positioning": "Madrid-based visual artist presenting contemporary painting with curatorial restraint."
   },
+  "boilerplate": {
+    "footer": "Rebeca Elmúdesi · {{page}} / {{pages}}",
+    "confidentiality": "Confidential — price list, not for circulation",
+    "copyright": "© {{year}} Rebeca Elmúdesi. All works and images reproduced by permission of the artist."
+  },
   "expression": {
-    "sourceLevel": "expression",
+    "sourceLevel": "surface-template",
     "principles": [
       "Well-curated, spacious, contemporary, professional.",
       "Give each artwork room to breathe; the work leads and the layout recedes.",
@@ -114,10 +113,10 @@
     "colorway": [
       "#000000",
       "#fe0200",
-      "#fe0200",
-      "#2e7d32",
-      "#ed6c02",
-      "#d32f2f"
+      "#000000",
+      "#2e7d4f",
+      "#b58900",
+      "#fe0200"
     ],
     "baseTemplate": "plotly_white",
     "font": {
@@ -127,8 +126,8 @@
     "titleFontSize": 18,
     "gridColor": "#ffffff",
     "sentiment": {
-      "positive": "#2e7d32",
-      "negative": "#d32f2f",
+      "positive": "#2e7d4f",
+      "negative": "#fe0200",
       "neutral": "#b4b4b4"
     }
   },
@@ -137,7 +136,7 @@
     "fillColors": [
       "#000000",
       "#fe0200",
-      "#fe0200"
+      "#000000"
     ],
     "textColor": "#000000",
     "arrowColor": "#000000",
@@ -147,7 +146,7 @@
     "bodyFont": "TeX Gyre Heros"
   },
   "formatting": {
-    "aspectRatio": "16:9",
+    "aspectRatio": "4:3",
     "autoContrastText": true,
     "accentCycleColors": [
       "#fe0200"
@@ -155,7 +154,14 @@
   },
   "document": {
     "headingColor": "#000000",
-    "tableHeaderColor": "#000000"
+    "tableHeaderColor": "#000000",
+    "paperSize": "A4",
+    "margins": {
+      "top": "0.71in",
+      "bottom": "0.71in",
+      "left": "0.71in",
+      "right": "0.71in"
+    }
   },
   "images": {
     "manifest": [
@@ -300,5 +306,19 @@
       }
     ]
   },
+  "logo": {
+    "primary": "logos/wordmark.svg",
+    "white": "logos/wordmark-white.svg",
+    "accent": "logos/wordmark-accent.svg",
+    "mark": "logos/mark.svg",
+    "markBlack": "logos/mark-black.svg",
+    "markOnDark": "logos/mark-on-dark.svg",
+    "markBare": "logos/mark-bare.svg",
+    "png": "logos/wordmark.png",
+    "whitePng": "logos/wordmark-white.png",
+    "markPng": "logos/mark.png",
+    "favicon": "logos/mark.svg"
+  },
+  "fallbacksUsed": [],
   "warnings": []
 }
