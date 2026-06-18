@@ -29,8 +29,9 @@ claude --plugin-dir .
 
 Skills are split between MCP-hosted stubs (fetched at runtime via
 `ReadMcpResourceTool`) and locally-authored skills (frontmatter `_local: true`).
-See `skills/README.md` for the maintenance workflow; the maintainer skill
-`plugin-maintain` covers add / refresh / release.
+See `skills/README.md` for the maintenance workflow. Maintaining this plugin is
+an operator task driven by the `plugin-maintain` skill in stromy-org
+(`/plugin-maintain`) — it is not shipped in this plugin.
 
 ## Updating
 

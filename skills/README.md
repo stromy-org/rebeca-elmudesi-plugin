@@ -14,10 +14,12 @@ This directory holds the plugin's skills. Two kinds of skills live here:
    validator (`scripts/validate-plugin-completeness.py` in stromy-org)
    recognises them as deliberate, not orphaned.
 
-The maintainer skill `plugin-maintain` (synced from
-`scaffolds/claude-plugin-template/template/skills/plugin-maintain`) covers
-the full add / refresh / release workflow. Invoke it with
-`/rebeca-elmudesi:plugin-maintain` once the plugin is installed.
+This plugin ships **no maintainer skill** — maintaining it (add / refresh /
+release) is an operator task, not a client-facing one. `plugin-maintain`
+deliberately lives only in `stromy-org/.claude/skills/plugin-maintain/` and is
+never distributed in this plugin's `skills/` surface (a distributed maintainer
+skill would surface as a client-visible `/rebeca-elmudesi:plugin-maintain`
+command). Invoke `/plugin-maintain` from stromy-org to maintain this plugin.
 
 ## Refreshing skills
 
