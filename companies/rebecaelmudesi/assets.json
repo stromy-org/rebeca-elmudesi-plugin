@@ -18,7 +18,88 @@
       "name": "texgyreheros-regular.otf"
     }
   ],
-  "logos": [],
+  "logos": [
+    {
+      "name": "icon_dark.svg",
+      "sha256": "13402c1031bd0f64485e1b0933c32bedcc9c2a8b5aac7dd63081e9b61190b907",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "icon_paper.svg",
+      "sha256": "5cff6b410d3b35df0c6d5bc2e6b45668cf7fb4a2faa93d17126ff341feb291d7",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "logo.svg",
+      "sha256": "30c4869475a8c628dc632d293de0b8a12315758513974d7e515778348225589d",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "logo_white.svg",
+      "sha256": "7b11b89dc62dbbfb1dd7831b7571e6127814d865506917cc416b4aae66d0f006",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "mark-bare.svg",
+      "sha256": "4dddec5931a421d2592e344f59776abf4460dd7abbf971fa3d57da9c68c623a6",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "mark-black.svg",
+      "sha256": "48260066c16dd7f72ac75af31933a92f3f11c752160d6b877296263872169640",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "mark-on-dark.png",
+      "sha256": "5bb8937293ede92ae5d6eb7aec95b606c4eb72782298a4f5ab49c35e90a47252",
+      "mime": "image/png"
+    },
+    {
+      "name": "mark-on-dark.svg",
+      "sha256": "13402c1031bd0f64485e1b0933c32bedcc9c2a8b5aac7dd63081e9b61190b907",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "mark.png",
+      "sha256": "855b0cfc8971a53eaca306e822fe9c795d3afc052e73a5cba3ba8716cd07c0c2",
+      "mime": "image/png"
+    },
+    {
+      "name": "mark.svg",
+      "sha256": "5cff6b410d3b35df0c6d5bc2e6b45668cf7fb4a2faa93d17126ff341feb291d7",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "pattern-tile.svg",
+      "sha256": "fdf9333c6e9a556bc5873d7f21f80a37259cb128f5a48638f1a93439057d4605",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "wordmark-accent.svg",
+      "sha256": "cd882ede54eccfbb4cabf2c64c71d26f1c9822054d5fca067c296399902ead69",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "wordmark-white.png",
+      "sha256": "8ca959cc59bc0f7072cd2703c0e695992def4d92e88ba9e281ca8a34e0d704d7",
+      "mime": "image/png"
+    },
+    {
+      "name": "wordmark-white.svg",
+      "sha256": "7b11b89dc62dbbfb1dd7831b7571e6127814d865506917cc416b4aae66d0f006",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "wordmark.png",
+      "sha256": "493ae99c464bc00b0d268b29fb4b70532022950fced52d34cd5d4143dae8effd",
+      "mime": "image/png"
+    },
+    {
+      "name": "wordmark.svg",
+      "sha256": "30c4869475a8c628dc632d293de0b8a12315758513974d7e515778348225589d",
+      "mime": "image/svg+xml"
+    }
+  ],
   "images": [
     {
       "name": "amsterdam--landscape-1.jpg",
