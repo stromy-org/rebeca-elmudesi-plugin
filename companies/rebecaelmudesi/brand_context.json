@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "72e9e404cc3b29400168a60888fd793509e55e825e96decf606e9a6326d0f73b",
+    "charterSha": "e1708b80dd1c313e76f599037ec00b00759c23390164726793767df466aa624a",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -102,7 +102,130 @@
       "Rounded corners",
       "Clip art or stock photography",
       "Invented or unsourced titles, descriptions, or copy"
-    ]
+    ],
+    "visual_grammar": {
+      "backgrounds": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact"
+        },
+        "selected": "white-cube",
+        "spec": {
+          "canvases": [
+            {
+              "name": "white",
+              "role": "primary-light",
+              "css": "#FFFFFF"
+            },
+            {
+              "name": "ink",
+              "role": "text",
+              "css": "#000000"
+            }
+          ],
+          "rhythm": "white-dominant — pure white ground everywhere; NO dark surfaces (the gallery white wall)",
+          "darkFrequency": 0,
+          "photo": {
+            "treatment": "faithful reproduction at true aspect ratio, contained, never bleeding to the edge",
+            "overlay": "none"
+          }
+        },
+        "tokens": [
+          "--canvas-white",
+          "--ink"
+        ]
+      },
+      "gradients": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "ornament:none — no gradients, ever; depth is white space + thin black hairline, never a wash"
+        }
+      },
+      "grid": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact"
+        },
+        "selected": "centered-contained",
+        "spec": {
+          "columns": "contained, centered",
+          "margins": "thin, even margins on every side",
+          "imagePolicy": "contained & centered, never bleeding, true aspect ratio",
+          "text": "justified",
+          "density": "spacious",
+          "symmetry": "centered",
+          "dividers": "thin black hairline rules"
+        }
+      },
+      "iconography": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "no icon system — an art portfolio's wayfinding is type + hairline rules; no clip art (explicit anti-pattern)"
+        }
+      },
+      "elevation": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact"
+        },
+        "selected": "flat-hairline",
+        "spec": {
+          "shadows": "none",
+          "radius": "0 (square corners)",
+          "borders": "1px black hairline frame; images contained, flat on the wall",
+          "surface": "flat",
+          "depth": "via thin black hairline only — NO drop shadows, NO rounded corners (both explicit anti-patterns)"
+        }
+      },
+      "motifs": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact"
+        },
+        "selected": "hairline-red-rule",
+        "spec": {
+          "name": "hairline-red-rule",
+          "geometry": "thin black hairline rules are the structural mark; a short RED #fe0200 rule marks the single accent moment (section open / current work)",
+          "meaning": "curatorial restraint — red is rare and deliberate; the work leads",
+          "marks": [
+            "black-hairline",
+            "red-accent-rule"
+          ]
+        }
+      },
+      "motion": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "static — the work leads; the layout and any motion recede; no motion (William, GATE A 2026-07-02)"
+        }
+      },
+      "patterns": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "no pattern system — texture is white space + thin black hairlines only"
+        }
+      },
+      "photo": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "faithful reproduction at true aspect ratio, contained; handled by the image system / images.manifest, not a grammar treatment"
+        }
+      }
+    }
   },
   "surfaceExpression": {
     "presentation": {

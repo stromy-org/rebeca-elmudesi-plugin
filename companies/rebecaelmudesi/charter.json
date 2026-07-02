@@ -111,7 +111,199 @@
         "freshness": "current",
         "note": "Client email 2026-06-16 (subject 'Re: Setting up your branded workspace'): well curated, spacious, contemporary and professional... all the texts justified, the artworks with space to breathe... thin margins in the borders (no bleeding to the sides)... no dropshadows or additional nonsense. do not stretch the images either, keep everything faithful... source all the info ONLY from my imput and website."
       }
-    ]
+    ],
+    "visual_grammar": {
+      "backgrounds": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "recovered from expression.signatureElements + antiPatterns + principles; GATE A 2026-07-02 (William)"
+        },
+        "selected": "white-cube",
+        "candidates": [
+          {
+            "id": "white-cube",
+            "label": "White cube",
+            "spec": {
+              "canvases": [
+                {
+                  "name": "white",
+                  "role": "primary-light",
+                  "css": "#FFFFFF"
+                },
+                {
+                  "name": "ink",
+                  "role": "text",
+                  "css": "#000000"
+                }
+              ],
+              "rhythm": "white-dominant — pure white ground everywhere; NO dark surfaces (the gallery white wall)",
+              "darkFrequency": 0,
+              "photo": {
+                "treatment": "faithful reproduction at true aspect ratio, contained, never bleeding to the edge",
+                "overlay": "none"
+              }
+            },
+            "tokens": [
+              "--canvas-white",
+              "--ink"
+            ],
+            "evidence": {
+              "tier": "source-artifact"
+            }
+          }
+        ]
+      },
+      "gradients": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "ornament:none — no gradients, ever; depth is white space + thin black hairline, never a wash"
+        }
+      },
+      "grid": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "recovered from expression.signatureElements + antiPatterns + principles; GATE A 2026-07-02 (William)"
+        },
+        "selected": "centered-contained",
+        "candidates": [
+          {
+            "id": "centered-contained",
+            "label": "Centered contained",
+            "spec": {
+              "columns": "contained, centered",
+              "margins": "thin, even margins on every side",
+              "imagePolicy": "contained & centered, never bleeding, true aspect ratio",
+              "text": "justified",
+              "density": "spacious",
+              "symmetry": "centered",
+              "dividers": "thin black hairline rules"
+            },
+            "tokens": [],
+            "evidence": {
+              "tier": "source-artifact"
+            }
+          },
+          {
+            "id": "editorial-asymmetric",
+            "label": "Editorial asymmetric",
+            "spec": {
+              "columns": "image left, justified caption right",
+              "symmetry": "asymmetric",
+              "note": "catalogue/magazine hang"
+            }
+          }
+        ]
+      },
+      "iconography": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "no icon system — an art portfolio's wayfinding is type + hairline rules; no clip art (explicit anti-pattern)"
+        }
+      },
+      "elevation": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "recovered from expression.signatureElements + antiPatterns + principles; GATE A 2026-07-02 (William)"
+        },
+        "selected": "flat-hairline",
+        "candidates": [
+          {
+            "id": "flat-hairline",
+            "label": "Flat hairline",
+            "spec": {
+              "shadows": "none",
+              "radius": "0 (square corners)",
+              "borders": "1px black hairline frame; images contained, flat on the wall",
+              "surface": "flat",
+              "depth": "via thin black hairline only — NO drop shadows, NO rounded corners (both explicit anti-patterns)"
+            },
+            "tokens": [],
+            "evidence": {
+              "tier": "source-artifact"
+            }
+          }
+        ]
+      },
+      "motifs": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "recovered from expression.signatureElements + antiPatterns + principles; GATE A 2026-07-02 (William)"
+        },
+        "selected": "hairline-red-rule",
+        "candidates": [
+          {
+            "id": "hairline-red-rule",
+            "label": "Hairline + red rule",
+            "spec": {
+              "name": "hairline-red-rule",
+              "geometry": "thin black hairline rules are the structural mark; a short RED #fe0200 rule marks the single accent moment (section open / current work)",
+              "meaning": "curatorial restraint — red is rare and deliberate; the work leads",
+              "marks": [
+                "black-hairline",
+                "red-accent-rule"
+              ]
+            },
+            "tokens": [],
+            "evidence": {
+              "tier": "source-artifact"
+            }
+          },
+          {
+            "id": "hairline-only",
+            "label": "Hairline only",
+            "spec": {
+              "name": "hairline-only",
+              "geometry": "black hairlines only; red reserved strictly for the wordmark",
+              "meaning": "most austere"
+            }
+          },
+          {
+            "id": "red-index",
+            "label": "Red index",
+            "spec": {
+              "name": "red-index",
+              "geometry": "red used as a small catalogue index/number beside each work"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "static — the work leads; the layout and any motion recede; no motion (William, GATE A 2026-07-02)"
+        }
+      },
+      "patterns": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "no pattern system — texture is white space + thin black hairlines only"
+        }
+      },
+      "photo": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "faithful reproduction at true aspect ratio, contained; handled by the image system / images.manifest, not a grammar treatment"
+        }
+      }
+    }
   },
   "presentation": {
     "aspectRatio": "4:3"
