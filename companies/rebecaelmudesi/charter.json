@@ -153,7 +153,11 @@
               "tier": "source-artifact"
             }
           }
-        ]
+        ],
+        "cssTokens": {
+          "--canvas-white": "#FFFFFF",
+          "--ink": "#000000"
+        }
       },
       "gradients": {
         "status": "n-a",
@@ -198,7 +202,12 @@
               "note": "catalogue/magazine hang"
             }
           }
-        ]
+        ],
+        "cssTokens": {
+          "--content-max": "60rem",
+          "--grid-margin": "7vw",
+          "--rule-hairline": "1px solid #000000"
+        }
       },
       "iconography": {
         "status": "n-a",
@@ -232,7 +241,11 @@
               "tier": "source-artifact"
             }
           }
-        ]
+        ],
+        "cssTokens": {
+          "--frame-hairline": "1px solid #000000",
+          "--radius-card": "0"
+        }
       },
       "motifs": {
         "status": "approved",
@@ -277,7 +290,11 @@
               "geometry": "red used as a small catalogue index/number beside each work"
             }
           }
-        ]
+        ],
+        "cssTokens": {
+          "--accent-red": "#fe0200",
+          "--accent-rule": "2px solid #fe0200"
+        }
       },
       "motion": {
         "status": "n-a",

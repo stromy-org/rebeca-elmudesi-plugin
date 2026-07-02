@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "e1708b80dd1c313e76f599037ec00b00759c23390164726793767df466aa624a",
+    "charterSha": "5751e41cc16b5279d9fe86a4d1a95c681b762e92f17df09b6a59a161eb51d60f",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -111,6 +111,10 @@
           "tier": "source-artifact"
         },
         "selected": "white-cube",
+        "cssTokens": {
+          "--canvas-white": "#FFFFFF",
+          "--ink": "#000000"
+        },
         "spec": {
           "canvases": [
             {
@@ -151,6 +155,11 @@
           "tier": "source-artifact"
         },
         "selected": "centered-contained",
+        "cssTokens": {
+          "--content-max": "60rem",
+          "--grid-margin": "7vw",
+          "--rule-hairline": "1px solid #000000"
+        },
         "spec": {
           "columns": "contained, centered",
           "margins": "thin, even margins on every side",
@@ -176,6 +185,10 @@
           "tier": "source-artifact"
         },
         "selected": "flat-hairline",
+        "cssTokens": {
+          "--frame-hairline": "1px solid #000000",
+          "--radius-card": "0"
+        },
         "spec": {
           "shadows": "none",
           "radius": "0 (square corners)",
@@ -191,6 +204,10 @@
           "tier": "source-artifact"
         },
         "selected": "hairline-red-rule",
+        "cssTokens": {
+          "--accent-red": "#fe0200",
+          "--accent-rule": "2px solid #fe0200"
+        },
         "spec": {
           "name": "hairline-red-rule",
           "geometry": "thin black hairline rules are the structural mark; a short RED #fe0200 rule marks the single accent moment (section open / current work)",
