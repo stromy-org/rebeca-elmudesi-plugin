@@ -1,8 +1,8 @@
 {
   "meta": {
     "tier": "producer",
-    "displayName": "Rebeca Elmúdesi",
-    "tagline": "Visual artist — Madrid",
+    "displayName": "Rebeca Elm\u00fadesi",
+    "tagline": "Visual artist \u2014 Madrid",
     "industry": "Fine art / painting",
     "audience": "Collectors, galleries, curators, commission clients",
     "locale": [
@@ -32,17 +32,35 @@
     "heading": {
       "family": "TeX Gyre Heros",
       "fallback": "Helvetica, Arial, sans-serif",
-      "weight": "700"
+      "weight": "700",
+      "fallbackStack": [
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "webSafe": "Arial"
     },
     "body": {
       "family": "TeX Gyre Heros",
       "fallback": "Helvetica, Arial, sans-serif",
-      "weight": "400"
+      "weight": "400",
+      "fallbackStack": [
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "webSafe": "Arial"
     },
     "mono": {
       "family": "TeX Gyre Heros",
       "fallback": "Helvetica, Arial, sans-serif",
-      "weight": "400"
+      "weight": "400",
+      "fallbackStack": [
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "webSafe": "Arial"
     }
   },
   "logo": {
@@ -63,7 +81,7 @@
       "primary": "creator",
       "secondary": "sage",
       "status": "approved",
-      "rationale": "Creator (the making/looking practice) lead; Sage (perception, the gaze, identity) secondary — from the artist's own statement."
+      "rationale": "Creator (the making/looking practice) lead; Sage (perception, the gaze, identity) secondary \u2014 from the artist's own statement."
     },
     "essence": "Quiet, editorial, gallery-neutral. Work rooted in looking.",
     "positioning": "Madrid-based visual artist presenting contemporary painting with curatorial restraint."
@@ -138,7 +156,7 @@
                   "css": "#000000"
                 }
               ],
-              "rhythm": "white-dominant — pure white ground everywhere; NO dark surfaces (the gallery white wall)",
+              "rhythm": "white-dominant \u2014 pure white ground everywhere; NO dark surfaces (the gallery white wall)",
               "darkFrequency": 0,
               "photo": {
                 "treatment": "faithful reproduction at true aspect ratio, contained, never bleeding to the edge",
@@ -164,7 +182,7 @@
         "required": false,
         "evidence": {
           "tier": "source-artifact",
-          "source": "ornament:none — no gradients, ever; depth is white space + thin black hairline, never a wash"
+          "source": "ornament:none \u2014 no gradients, ever; depth is white space + thin black hairline, never a wash"
         }
       },
       "grid": {
@@ -214,7 +232,7 @@
         "required": false,
         "evidence": {
           "tier": "source-artifact",
-          "source": "no icon system — an art portfolio's wayfinding is type + hairline rules; no clip art (explicit anti-pattern)"
+          "source": "no icon system \u2014 an art portfolio's wayfinding is type + hairline rules; no clip art (explicit anti-pattern)"
         }
       },
       "elevation": {
@@ -234,7 +252,7 @@
               "radius": "0 (square corners)",
               "borders": "1px black hairline frame; images contained, flat on the wall",
               "surface": "flat",
-              "depth": "via thin black hairline only — NO drop shadows, NO rounded corners (both explicit anti-patterns)"
+              "depth": "via thin black hairline only \u2014 NO drop shadows, NO rounded corners (both explicit anti-patterns)"
             },
             "tokens": [],
             "evidence": {
@@ -262,7 +280,7 @@
             "spec": {
               "name": "hairline-red-rule",
               "geometry": "thin black hairline rules are the structural mark; a short RED #fe0200 rule marks the single accent moment (section open / current work)",
-              "meaning": "curatorial restraint — red is rare and deliberate; the work leads",
+              "meaning": "curatorial restraint \u2014 red is rare and deliberate; the work leads",
               "marks": [
                 "black-hairline",
                 "red-accent-rule"
@@ -301,7 +319,7 @@
         "required": false,
         "evidence": {
           "tier": "source-artifact",
-          "source": "static — the work leads; the layout and any motion recede; no motion (William, GATE A 2026-07-02)"
+          "source": "static \u2014 the work leads; the layout and any motion recede; no motion (William, GATE A 2026-07-02)"
         }
       },
       "patterns": {
@@ -309,7 +327,7 @@
         "required": false,
         "evidence": {
           "tier": "source-artifact",
-          "source": "no pattern system — texture is white space + thin black hairlines only"
+          "source": "no pattern system \u2014 texture is white space + thin black hairlines only"
         }
       },
       "photo": {

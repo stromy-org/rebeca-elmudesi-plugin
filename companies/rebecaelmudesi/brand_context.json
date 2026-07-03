@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "5751e41cc16b5279d9fe86a4d1a95c681b762e92f17df09b6a59a161eb51d60f",
+    "charterSha": "ac4215506e38e6c83570904ff0167c58fe59ae944e3c1e2a771a60e2d345e525",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -27,17 +27,35 @@
     "heading": {
       "family": "TeX Gyre Heros",
       "weight": "700",
-      "fallback": "Helvetica, Arial, sans-serif"
+      "fallback": "Helvetica, Arial, sans-serif",
+      "fallbackStack": [
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "webSafe": "Arial"
     },
     "body": {
       "family": "TeX Gyre Heros",
       "weight": "400",
-      "fallback": "Helvetica, Arial, sans-serif"
+      "fallback": "Helvetica, Arial, sans-serif",
+      "fallbackStack": [
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "webSafe": "Arial"
     },
     "mono": {
       "family": "TeX Gyre Heros",
       "weight": "400",
-      "fallback": "Helvetica, Arial, sans-serif"
+      "fallback": "Helvetica, Arial, sans-serif",
+      "fallbackStack": [
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "webSafe": "Arial"
     }
   },
   "tokens_css": "/* ============================================================\n   Rebeca Elmúdesi Design Tokens\n   Visual artist — Madrid\n\n   Version:  1.0.0\n   Date:     2026-06-16\n   Brand:    Rebeca Elmúdesi\n   Primary:  Black (#000000) — ink, rules, text\n   Accent:   Red (#fe0200) — used sparingly\n   Ground:   Pure white (#ffffff) everywhere\n\n   Direction: well-curated, spacious, contemporary, professional.\n   Justified text, thin even margins (no bleed), hairline rules,\n   no drop shadows, no rounded corners, faithful image aspect.\n   All values derive from the Rebeca Elmúdesi brand charter.\n   ============================================================ */\n\n:root {\n\n  /* -- Primary Palette ---------------------------------------- */\n  --brand-primary:        #000000;\n  --brand-dark:           #000000;\n  --brand-accent:         #fe0200;\n  --brand-accent-hover:   #d40200;\n  --brand-text:           #000000;\n  --brand-text-light:     #b4b4b4;\n  --brand-secondary:      #000000;\n  --brand-background:     #ffffff;\n  --brand-background-alt: #ffffff;\n  --brand-line:           #000000;\n\n  /* -- Neutral Scale (grayscale; captions use --neutral-400) -- */\n  --neutral-50:           #fafafa;\n  --neutral-100:          #f2f2f2;\n  --neutral-200:          #e6e6e6;\n  --neutral-300:          #d2d2d2;\n  --neutral-400:          #b4b4b4;   /* = --brand-text-light (captions, measurements) */\n  --neutral-500:          #8c8c8c;\n  --neutral-600:          #6e6e6e;\n  --neutral-700:          #4a4a4a;\n  --neutral-800:          #262626;\n  --neutral-900:          #000000;\n  --neutral-white:        #ffffff;\n\n  /* -- Semantic Colors (restrained; brand is monochrome) ------ */\n  --success:              #2e7d4f;\n  --warning:              #b58900;\n  --error:                #fe0200;   /* reuse the brand red */\n  --info:                 #3a3a3a;\n\n  /* -- Typography --------------------------------------------- */\n  --font-heading:         'TeX Gyre Heros', Helvetica, Arial, sans-serif;\n  --font-body:            'TeX Gyre Heros', Helvetica, Arial, sans-serif;\n  --font-mono:            'TeX Gyre Heros', Helvetica, Arial, sans-serif;\n\n  /* -- Font Weights ------------------------------------------- */\n  --weight-regular:       400;\n  --weight-medium:        400;\n  --weight-semibold:      700;\n  --weight-bold:          700;\n\n  /* -- Type Scale --------------------------------------------- */\n  --text-display-xl:      3rem;        /* 48px */\n  --text-display:         2.5rem;      /* 40px */\n  --text-h1:              2rem;        /* 32px */\n  --text-h2:              1.75rem;     /* 28px */\n  --text-h3:              1.5rem;      /* 24px */\n  --text-h4:              1.25rem;     /* 20px */\n  --text-body-lg:         1.125rem;    /* 18px */\n  --text-body:            1rem;        /* 16px */\n  --text-body-sm:         0.875rem;    /* 14px */\n  --text-caption:         0.75rem;     /* 12px — titles, descriptions, measurements */\n  --text-overline:        0.6875rem;   /* 11px */\n\n  /* -- Line Heights ------------------------------------------- */\n  --leading-display:      1.15;\n  --leading-h1:           1.2;\n  --leading-h2:           1.25;\n  --leading-h3:           1.3;\n  --leading-body:         1.6;\n  --leading-caption:      1.4;\n\n  /* -- Letter Spacing ----------------------------------------- */\n  --tracking-tight:       -0.01em;\n  --tracking-normal:      0;\n  --tracking-wide:        0.04em;\n  --tracking-wider:       0.08em;      /* overlines / labels */\n\n  /* -- Text Alignment (brand default: justify body copy) ------ */\n  --text-align-body:      justify;\n  --text-align-heading:   left;\n\n  /* -- Spacing Scale (4px base; brand reads spacious) --------- */\n  --space-1:              0.25rem;     /* 4px */\n  --space-2:              0.5rem;      /* 8px */\n  --space-3:              0.75rem;     /* 12px */\n  --space-4:              1rem;        /* 16px */\n  --space-6:              1.5rem;      /* 24px */\n  --space-8:              2rem;        /* 32px */\n  --space-12:             3rem;        /* 48px */\n  --space-16:             4rem;        /* 64px */\n  --space-24:             6rem;        /* 96px */\n  --space-32:             8rem;        /* 128px */\n\n  /* -- Border Radius (none; square corners only) -------------- */\n  --radius-sm:            0;\n  --radius-md:            0;\n  --radius-lg:            0;\n  --radius-xl:            0;\n  --radius-full:          0;\n\n  /* -- Shadows (none; the brand forbids drop shadows) --------- */\n  --shadow-sm:            none;\n  --shadow-md:            none;\n  --shadow-lg:            none;\n  --shadow-xl:            none;\n\n  /* -- Hairline Rules ----------------------------------------- */\n  --rule-color:           #000000;\n  --rule-weight:          1px;\n  --rule-weight-thin:     0.5px;\n\n  /* -- Layout (thin, even margins; images contained, no bleed)  */\n  --content-max:          1100px;\n  --page-margin:          18mm;        /* thin, even page margin */\n  --slide-margin:         40pt;\n  --doc-margin:           18mm;\n  --image-fit:            contain;     /* never crop/stretch — preserve aspect */\n\n  /* -- Transitions -------------------------------------------- */\n  --transition-fast:      150ms ease;\n  --transition-normal:    250ms ease;\n\n  /* -- Surface & Text (light only; brand is white-ground) ----- */\n  --surface:              var(--neutral-white);\n  --surface-raised:       var(--neutral-white);\n  --surface-overlay:      var(--neutral-white);\n  --text-primary:         var(--neutral-900);\n  --text-secondary:       var(--neutral-400);\n  --text-tertiary:        var(--neutral-400);\n  --text-inverse:         var(--neutral-white);\n  --border:               var(--neutral-900);\n  --border-subtle:        var(--neutral-200);\n}\n",
