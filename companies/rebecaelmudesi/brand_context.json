@@ -121,6 +121,10 @@
       "Clip art or stock photography",
       "Invented or unsourced titles, descriptions, or copy"
     ],
+    "requiredMotifs": [
+      "black-hairline",
+      "red-accent-rule"
+    ],
     "visual_grammar": {
       "backgrounds": {
         "status": "approved",
