@@ -1,6 +1,6 @@
 # Changes here will be overwritten by Copier; DO NOT edit manually.
 _commit: 1f315e7
-_src_path: scaffolds/claude-plugin-template
+_src_path: gh:stromy-org/claude-plugin-template
 author_name: William Masquelier
 client_name: Rebeca Elmudesi
 client_slug: rebecaelmudesi
