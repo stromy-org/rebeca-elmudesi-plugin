@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "rebeca-elmudesi",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Claude Code plugin for Rebeca Elmudesi \u2014 branded presentations and documents about her art via stromy-format, plus self-service website and brand asset editing via asset-broker",
   "author": {
     "name": "stromy-org"
