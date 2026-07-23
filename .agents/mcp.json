@@ -8,7 +8,7 @@
       "_consumed_by": ["claude", "codex", "gemini"],
       "_codex_via": "mcp-remote",
       "_gemini_via": "mcp-remote",
-      "_notes": "Hosted format skills (format-pptx, format-pptx-hd, format-docx, format-pdf, format-pdf-hd, format-html-hd, format-html-reveal, format-xlsx, format-mermaid, format-diagram, format-chart, format-prepare-document, format-remotion-video). Server-side render tools (render_pptx/render_pdf/render_deck) resolve brand fonts/images from assets.json sha256 handles. Skill bodies fetched at runtime via fs_read — see skills/<name>/SKILL.md stubs."
+      "_notes": "Hosted format skills (format-pptx, format-pptx-hd, format-docx, format-pdf, format-pdf-hd, format-html-hd, format-html-reveal, format-xlsx, format-mermaid, format-diagram, format-chart, format-prepare-document, format-video-hd). Server-side render tools (render_pptx/render_pdf/render_deck) resolve brand fonts/images from assets.json sha256 handles. Skill bodies fetched at runtime via fs_read — see skills/<name>/SKILL.md stubs."
     }
   }
 }
