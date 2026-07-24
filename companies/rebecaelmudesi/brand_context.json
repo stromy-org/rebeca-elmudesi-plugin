@@ -508,5 +508,11 @@
     "markPng": "logos/mark.png",
     "favicon": "logos/mark.svg"
   },
+  "templates": {
+    "docx": {
+      "styles": "templates/docx/styles.docx",
+      "letterhead": "templates/docx/letterhead.docx"
+    }
+  },
   "fallbacksUsed": []
 }
