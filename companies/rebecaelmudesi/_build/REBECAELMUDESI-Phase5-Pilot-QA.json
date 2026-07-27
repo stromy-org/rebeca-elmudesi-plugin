@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-06-17T11:15:32.649Z",
+  "brand": "rebecaelmudesi",
+  "expressionSourceLevel": "expression",
+  "expressionWarnings": [],
+  "personality": {
+    "archetype": "creator",
+    "chromeWeight": "standard",
+    "density": "spacious",
+    "typeScale": "editorial",
+    "cornerStyle": "soft",
+    "motifRole": "hero"
+  },
+  "checks": {
+    "cardConceptCount": 20,
+    "signatureVariantCount": 12,
+    "promotedCardCount": 10,
+    "imageryManifestEntries": 0,
+    "signatureFragments": 12,
+    "inlineStyleOnlySignatures": true,
+    "imageFreeSignatures": true,
+    "recommendedTopTenIds": [
+      "c01-dark-wordmark-contact-ledger",
+      "c02-dark-wordmark-tagline-image",
+      "c05-light-editorial-contact-ledger",
+      "c06-light-editorial-tagline-image",
+      "c09-icon-led-bold-contact-ledger",
+      "c11-icon-led-bold-pattern-field",
+      "c13-motif-led-minimal-contact-ledger",
+      "c16-motif-led-minimal-minimal-mono",
+      "c18-image-led-dramatic-tagline-image",
+      "c19-image-led-dramatic-pattern-field"
+    ],
+    "pdfExport": {
+      "attempted": false,
+      "success": false,
+      "reason": "not-requested"
+    },
+    "visualQa": {
+      "attempted": false
+    }
+  }
+}

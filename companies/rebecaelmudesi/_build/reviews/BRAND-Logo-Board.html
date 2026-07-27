@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rebeca Elmúdesi — Logo System</title>
+<style>
+  :root{ --red:#fe0200; --ink:#000; --paper:#fff; --grey:#b4b4b4; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:#fff; color:#000;
+        font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-weight:400; }
+  header{ padding:48px 56px 24px; border-bottom:1px solid #000; }
+  .kicker{ font-size:11px; letter-spacing:3px; text-transform:uppercase; color:var(--grey); }
+  h1{ font-size:30px; font-weight:400; margin:10px 0 4px; letter-spacing:.5px; }
+  .sub{ font-size:13px; color:#555; max-width:780px; line-height:1.6; }
+  section{ padding:40px 56px; border-bottom:1px solid #eee; }
+  h2{ font-size:12px; letter-spacing:2.5px; text-transform:uppercase; color:#000;
+      font-weight:700; margin:0 0 4px; }
+  .note{ font-size:12px; color:#888; margin:0 0 28px; }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1px;
+         background:#eee; border:1px solid #eee; }
+  .cell{ background:#fff; padding:0; display:flex; flex-direction:column; }
+  .stage{ flex:1; min-height:150px; display:flex; align-items:center; justify-content:center;
+          padding:34px 28px; }
+  .stage.dark{ background:#000; }
+  .stage.paper{ background:#fff; }
+  .stage img{ max-width:100%; }
+  .wm{ width:230px; } .wm-sm{ width:160px; }
+  .mk{ width:78px; } .mk-row{ display:flex; gap:20px; align-items:flex-end; }
+  .mk-16{ width:16px; } .mk-24{ width:24px; } .mk-32{ width:32px; } .mk-48{ width:48px; }
+  .cap{ font-size:11px; letter-spacing:.4px; color:#000; padding:11px 14px;
+        border-top:1px solid #eee; display:flex; justify-content:space-between; }
+  .cap .id{ color:var(--grey); font-variant-numeric:tabular-nums; }
+  .star{ color:var(--red); }
+  .legend{ font-size:12px; color:#555; line-height:1.7; }
+  .legend b{ color:#000; font-weight:700; }
+</style>
+</head>
+<body>
+<header>
+  <div class="kicker">Brand onboarding · logo system</div>
+  <h1>Rebeca Elmúdesi</h1>
+  <div class="sub">Per your brief — <b>just your name</b> as the primary mark, plus the <b>r.</b> favicon
+  reworked as a compact symbol. Helvetica (TeX Gyre Heros, embeddable), pure black/white,
+  <b>#fe0200</b> red used sparingly. Corners are <b>sharp</b>, not rounded — to match your
+  "no rounded corners" rule (the round web favicon stays only as the browser-tab icon).</div>
+</header>
+
+<section>
+  <h2>Primary wordmark — your name</h2>
+  <p class="note">Outlined Helvetica paths (no font dependency). Regular weight reads more gallery/editorial; bold is the louder option.</p>
+  <div class="grid">
+    <div class="cell"><div class="stage paper"><img class="wm" src="../staged/phase2-identity/logos/wordmark-black.svg"></div>
+      <div class="cap"><span>Regular · black on white <span class="star">★ recommended</span></span><span class="id">W1</span></div></div>
+    <div class="cell"><div class="stage dark"><img class="wm" src="../staged/phase2-identity/logos/wordmark-white.svg"></div>
+      <div class="cap"><span>Regular · white on black</span><span class="id">W2</span></div></div>
+    <div class="cell"><div class="stage paper"><img class="wm" src="../staged/phase2-identity/logos/wordmark-bold-black.svg"></div>
+      <div class="cap"><span>Bold · black on white</span><span class="id">W3</span></div></div>
+    <div class="cell"><div class="stage paper"><img class="wm" src="../staged/phase2-identity/logos/wordmark-accent.svg"></div>
+      <div class="cap"><span>Regular · red accent period</span><span class="id">W4</span></div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Compact mark — r.</h2>
+  <p class="note">From your favicon. For avatars, stamps, watermark, document corners. Sharp square container.</p>
+  <div class="grid">
+    <div class="cell"><div class="stage paper"><img class="mk" src="../staged/phase2-identity/logos/mark-bare-black.svg"></div>
+      <div class="cap"><span>Bare glyph · black</span><span class="id">M1</span></div></div>
+    <div class="cell"><div class="stage paper"><img class="mk" src="../staged/phase2-identity/logos/mark-square-dark.svg"></div>
+      <div class="cap"><span>Black square · white r. <span class="star">★</span></span><span class="id">M2</span></div></div>
+    <div class="cell"><div class="stage dark"><img class="mk" src="../staged/phase2-identity/logos/mark-square-light.svg"></div>
+      <div class="cap"><span>White square · black r.</span><span class="id">M3</span></div></div>
+    <div class="cell"><div class="stage paper"><img class="mk" src="../staged/phase2-identity/logos/mark-reddot-light.svg"></div>
+      <div class="cap"><span>Bare · red dot</span><span class="id">M4</span></div></div>
+    <div class="cell"><div class="stage paper"><img class="mk" src="../staged/phase2-identity/logos/mark-square-reddot.svg"></div>
+      <div class="cap"><span>Black square · red dot <span class="star">★</span></span><span class="id">M5</span></div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Legibility at favicon / avatar sizes</h2>
+  <p class="note">The mark must hold at 16px. Square versions carry small sizes best.</p>
+  <div class="grid">
+    <div class="cell"><div class="stage paper"><div class="mk-row">
+      <img class="mk-16" src="../staged/phase2-identity/logos/mark-square-dark.svg">
+      <img class="mk-24" src="../staged/phase2-identity/logos/mark-square-dark.svg">
+      <img class="mk-32" src="../staged/phase2-identity/logos/mark-square-dark.svg">
+      <img class="mk-48" src="../staged/phase2-identity/logos/mark-square-dark.svg"></div></div>
+      <div class="cap"><span>M2 at 16 / 24 / 32 / 48 px</span><span class="id">—</span></div></div>
+    <div class="cell"><div class="stage paper"><div class="mk-row">
+      <img class="mk-16" src="../staged/phase2-identity/logos/mark-square-reddot.svg">
+      <img class="mk-24" src="../staged/phase2-identity/logos/mark-square-reddot.svg">
+      <img class="mk-32" src="../staged/phase2-identity/logos/mark-square-reddot.svg">
+      <img class="mk-48" src="../staged/phase2-identity/logos/mark-square-reddot.svg"></div></div>
+      <div class="cap"><span>M5 at 16 / 24 / 32 / 48 px</span><span class="id">—</span></div></div>
+  </div>
+</section>
+
+<section>
+  <h2>In context — a document header</h2>
+  <div class="grid" style="grid-template-columns:1fr;">
+    <div class="cell"><div class="stage paper" style="justify-content:flex-start; padding:46px 56px;">
+      <div style="width:100%; max-width:720px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; border-bottom:1px solid #000; padding-bottom:14px;">
+          <img class="wm-sm" src="../staged/phase2-identity/logos/wordmark-black.svg">
+          <span style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#b4b4b4;">Works · 2024–2025</span>
+        </div>
+        <p style="text-align:justify; font-size:13px; line-height:1.8; color:#222; margin-top:22px;">
+          Rebeca Elmúdesi (Dominican Republic, 2003) is a visual artist based in Madrid whose pictorial
+          practice explores the mechanisms of perception, the construction of identity, and the tensions
+          that arise between one's own gaze and the gaze of others.</p>
+      </div></div>
+      <div class="cap"><span>Wordmark W1 as a justified-layout masthead</span><span class="id">ctx</span></div></div>
+  </div>
+</section>
+</body>
+</html>

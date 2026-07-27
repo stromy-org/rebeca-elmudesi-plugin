@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Rebeca Elmúdesi Signature Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=TeX%20Gyre%20Heros:wght@400;500&family=TeX%20Gyre%20Heros:wght@400;500;700&family=TeX%20Gyre%20Heros&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary: #000000;
+      --accent: #fe0200;
+      --bg: #ffffff;
+      --bg-alt: #ffffff;
+      --text: #000000;
+      --text-light: #b4b4b4;
+      --text-muted: #c8c8c8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "TeX Gyre Heros",  Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+      color: #000000;
+    }
+    main { max-width: 1280px; margin: 0 auto; padding: 32px 24px 120px; }
+    header {
+      background: linear-gradient(135deg, #000000 0%, #000000 100%);
+      color: #ffffff;
+      border-radius: 24px;
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+    header h1 {
+      margin: 0 0 10px;
+      font-family: "TeX Gyre Heros", serif;
+      font-size: 42px;
+      font-weight: 700;
+    }
+    header p { margin: 0; max-width: 820px; line-height: 1.65; color: #ffffffc7; }
+    .grid { display: grid; gap: 18px; }
+    .variant {
+      display: grid;
+      grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
+      gap: 20px;
+      align-items: start;
+      background: rgba(255,255,255,.62);
+      border: 2px solid transparent;
+      border-radius: 22px;
+      padding: 20px;
+      cursor: pointer;
+      transition: all .2s;
+      position: relative;
+    }
+    .variant:hover { box-shadow: 0 8px 24px #00000014; }
+    .variant.selected {
+      border-color: #fe0200;
+      box-shadow: 0 10px 24px #fe020024;
+    }
+    .variant.selected::after {
+      content: '✓';
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #fe0200;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .variant__eyebrow, .chips span, .actions a {
+      font-family: "TeX Gyre Heros", monospace;
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .variant__meta h2 {
+      margin: 8px 0 10px;
+      color: #000000;
+      font-family: "TeX Gyre Heros", serif;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .variant__meta p { color: #b4b4b4; line-height: 1.65; margin: 0 0 14px; }
+    .chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+    .chips span {
+      border: 1px solid #0000001f;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: #000000;
+      background: #ffffffcc;
+    }
+    .actions { display: flex; gap: 12px; align-items: center; }
+    .actions a {
+      display: inline-block;
+      text-decoration: none;
+      color: #fe0200;
+      letter-spacing: .08em;
+    }
+    .copy-btn {
+      background: #fe02001a;
+      color: #fe0200;
+      border: 1px solid #fe02004d;
+      border-radius: 6px;
+      padding: 4px 10px;
+      font-family: "TeX Gyre Heros", monospace;
+      font-size: 10px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .copy-btn:hover { background: #fe02002e; }
+    .variant__preview {
+      background: white;
+      border: 1px solid #0000000f;
+      border-radius: 18px;
+      padding: 18px;
+    }
+    .signature-shell { overflow-x: auto; }
+    /* Bottom bar */
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      background: #000000f2;
+      backdrop-filter: blur(12px);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 28px;
+      font-family: "TeX Gyre Heros", monospace;
+      font-size: 13px;
+    }
+    .bottom-bar__count strong { color: #fe0200; font-size: 22px; margin-right: 4px; }
+    .bottom-bar button {
+      background: #fe0200;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-family: "TeX Gyre Heros", monospace;
+      font-size: 12px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .bottom-bar button:hover { opacity: 0.85; }
+    .toast {
+      position: fixed;
+      bottom: 70px;
+      right: 28px;
+      background: #000000;
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-family: "TeX Gyre Heros", monospace;
+      opacity: 0;
+      transition: opacity .3s;
+      pointer-events: none;
+      z-index: 300;
+    }
+    .toast.show { opacity: 1; }
+    @media (max-width: 980px) { .variant { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTk5LjQgMjU4LjYiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iUmViZWNhIEVsbcO6ZGVzaSI+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQwLjAwIDE3NS43MSkgc2NhbGUoMC4xNDI4NiAtMC4xNDI4NikiIGZpbGw9IiNmZmZmZmYiIGQ9Ik02NzkgMFYyM0M2NDQgNDcgNjM2IDczIDYzNSAxNzBDNjMzIDI5MCA2MTUgMzI2IDUzNiAzNjBDNjE4IDQwMCA2NTEgNDUxIDY1MSA1MzRDNjUxIDY2MCA1NzIgNzI5IDQyOSA3MjlIOTNWMEgxODZWMzE0SDQyNkM1MDggMzE0IDU0NyAyNzQgNTQ2IDE4NEw1NDUgMTE5QzU0NCA3NCA1NTMgMzAgNTY2IDBaTTU1NCA1MjFDNTU0IDQzNSA1MTAgMzk2IDQxMSAzOTZIMTg2VjY0N0g0MTFDNTE1IDY0NyA1NTQgNjAzIDU1NCA1MjFaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0My4xNCAxNzUuNzEpIHNjYWxlKDAuMTQyODYgLTAuMTQyODYpIiBmaWxsPSIjZmZmZmZmIiBkPSJNNTEzIDIzOEM1MTMgMzE0IDUwNyAzNjIgNDkyIDQwMUM0NTggNDg3IDM3OCA1MzkgMjgwIDUzOUMxMzQgNTM5IDQwIDQzMSA0MCAyNTlDNDAgODcgMTMxIC0xNSAyNzggLTE1QzM5OCAtMTUgNDgxIDUzIDUwMiAxNTlINDE4QzM5NSA5MCAzNDggNjIgMjgxIDYyQzE5NCA2MiAxMjkgMTE4IDEyNyAyMzhaTTQyNCAzMTJDNDI0IDMxMiA0MjQgMzA4IDQyMyAzMDZIMTI5QzEzNiAzOTkgMTk1IDQ2MiAyNzkgNDYyQzM2MSA0NjIgNDI0IDM5NCA0MjQgMzEyWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMjIuNTcgMTc1LjcxKSBzY2FsZSgwLjE0Mjg2IC0wLjE0Mjg2KSIgZmlsbD0iI2ZmZmZmZiIgZD0iTTUyMyAyNjhDNTIzIDQzOCA0MzcgNTM5IDI5OSA1MzlDMjI3IDUzOSAxNzYgNTEyIDEzNyA0NTNWNzI5SDU0VjBIMTI5Vjc1QzE2OSAxNCAyMjIgLTE1IDI5NSAtMTVDNDMzIC0xNSA1MjMgOTggNTIzIDI2OFpNNDM2IDI2M0M0MzYgMTQ0IDM3NCA2MyAyODMgNjNDMTk1IDYzIDEzNyAxNDMgMTM3IDI2MkMxMzcgMzg1IDE5NSA0NjUgMjgzIDQ2MUMzNzYgNDYxIDQzNiAzODAgNDM2IDI2M1oiLz4KPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAyLjAwIDE3NS43MSkgc2NhbGUoMC4xNDI4NiAtMC4xNDI4NikiIGZpbGw9IiNmZmZmZmYiIGQ9Ik01MTMgMjM4QzUxMyAzMTQgNTA3IDM2MiA0OTIgNDAxQzQ1OCA0ODcgMzc4IDUzOSAyODAgNTM5QzEzNCA1MzkgNDAgNDMxIDQwIDI1OUM0MCA4NyAxMzEgLTE1IDI3OCAtMTVDMzk4IC0xNSA0ODEgNTMgNTAyIDE1OUg0MThDMzk1IDkwIDM0OCA2MiAyODEgNjJDMTk0IDYyIDEyOSAxMTggMTI3IDIzOFpNNDI0IDMxMkM0MjQgMzEyIDQyNCAzMDggNDIzIDMwNkgxMjlDMTM2IDM5OSAxOTUgNDYyIDI3OSA0NjJDMzYxIDQ2MiA0MjQgMzk0IDQyNCAzMTJaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM4MS40MyAxNzUuNzEpIHNjYWxlKDAuMTQyODYgLTAuMTQyODYpIiBmaWxsPSIjZmZmZmZmIiBkPSJNNDc3IDE4MEgzOTNDMzc5IDk2IDMzNiA2MiAyNjUgNjJDMTczIDYyIDExOCAxMzMgMTE4IDI1N0MxMTggMzg4IDE3MiA0NjIgMjYzIDQ2MkMzMzMgNDYyIDM3NyA0MjEgMzg3IDM0OEg0NzFDNDYxIDQ3NiAzODEgNTM5IDI2NCA1MzlDMTIzIDUzOSAzMSA0MzEgMzEgMjU3QzMxIDg4IDEyMSAtMTUgMjYzIC0xNUMzODggLTE1IDQ2NyA2MCA0NzcgMTgwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NTIuODYgMTc1LjcxKSBzY2FsZSgwLjE0Mjg2IC0wLjE0Mjg2KSIgZmlsbD0iI2ZmZmZmZiIgZD0iTTUzNSAyVjY1QzUyNiA2MyA1MjIgNjMgNTE3IDYzQzQ4OCA2MyA0NzIgNzggNDcyIDEwNFYzOTZDNDcyIDQ4OSA0MDQgNTM5IDI3NSA1MzlDMTQ4IDUzOSA3MCA0OTAgNjUgMzY5SDE0OUMxNTYgNDMzIDE5NCA0NjIgMjcyIDQ2MkMzNDcgNDYyIDM4OSA0MzQgMzg5IDM4NFYzNjJDMzg5IDMyNyAzNjggMzEyIDMwMiAzMDRDMTg0IDI4OSAxNjYgMjg1IDEzNCAyNzJDNzMgMjQ3IDQyIDIwMCA0MiAxMzZDNDIgNDEgMTA4IC0xNSAyMTQgLTE1QzI4MSAtMTUgMzQ2IDEzIDM5MiA2MkM0MDEgMjIgNDM3IC03IDQ3OCAtN0M0OTUgLTcgNTA4IC01IDUzNSAyWk0zODkgMTgxQzM4OSAxMDYgMzEzIDU4IDIzMiA1OEMxNjcgNTggMTI5IDgxIDEyOSAxMzhDMTI5IDE5MyAxNjYgMjE3IDI1NSAyMzBDMzQzIDI0MiAzNjEgMjQ2IDM4OSAyNTlaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU3Mi4wMCAxNzUuNzEpIHNjYWxlKDAuMTQyODYgLTAuMTQyODYpIiBmaWxsPSIjZmZmZmZmIiBkPSJNNjEzIDBWODJIMTgzVjMzMkg1ODBWNDE0SDE4M1Y2NDdINTk1VjcyOUg5MFYwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NjcuMjkgMTc1LjcxKSBzY2FsZSgwLjE0Mjg2IC0wLjE0Mjg2KSIgZmlsbD0iI2ZmZmZmZiIgZD0iTTE1MSAwVjcyOUg2OFYwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2OTkuMDAgMTc1LjcxKSBzY2FsZSgwLjE0Mjg2IC0wLjE0Mjg2KSIgZmlsbD0iI2ZmZmZmZiIgZD0iTTc2MCAwVjM5M0M3NjAgNDg3IDcwOCA1MzkgNjEwIDUzOUM1NDAgNTM5IDQ5OCA1MTggNDQ5IDQ1OUM0MTggNTE1IDM3NiA1MzkgMzA4IDUzOUMyMzggNTM5IDE5MiA1MTMgMTQ3IDQ1MFY1MjRINzFWMEgxNTRWMzI5QzE1NCA0MDUgMjA5IDQ2NiAyNzcgNDY2QzMzOSA0NjYgMzc0IDQyOCAzNzQgMzYxVjBINDU3VjMyOUM0NTcgNDA1IDUxMyA0NjYgNTgxIDQ2NkM2NDIgNDY2IDY3NyA0MjcgNjc3IDM2MVYwWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4MTguMDAgMTc1LjcxKSBzY2FsZSgwLjE0Mjg2IC0wLjE0Mjg2KSIgZmlsbD0iI2ZmZmZmZiIgZD0iTTQ4MiAwVjUyNEgzOTlWMjM1QzM5OSAxMjggMzQzIDU4IDI1NiA1OEMxOTAgNTggMTQ4IDk4IDE0OCAxNjFWNTI0SDY1VjEyOEM2NSA0MSAxMzAgLTE1IDIzMiAtMTVDMzA5IC0xNSAzNTggMTIgNDA3IDgxVjBaTTQ1NyA3MjlIMzQ0TDI0OCA1ODFIMzA4WiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4OTcuNDMgMTc1LjcxKSBzY2FsZSgwLjE0Mjg2IC0wLjE0Mjg2KSIgZmlsbD0iI2ZmZmZmZiIgZD0iTTQ5NSAwVjcyOUg0MTJWNDU4QzM3NyA1MTEgMzIxIDUzOSAyNTEgNTM5QzExNSA1MzkgMjYgNDM0IDI2IDI2N0MyNiA5MCAxMTMgLTE1IDI1NCAtMTVDMzI2IC0xNSAzNzYgMTIgNDIxIDc3VjBaTTQxMiAyNjBDNDEyIDEzOSAzNTQgNjMgMjY2IDYzQzE3NCA2MyAxMTMgMTQwIDExMyAyNjJDMTEzIDM4NCAxNzQgNDYxIDI2NSA0NjFDMzU1IDQ2MSA0MTIgMzgxIDQxMiAyNjBaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk3Ni44NiAxNzUuNzEpIHNjYWxlKDAuMTQyODYgLTAuMTQyODYpIiBmaWxsPSIjZmZmZmZmIiBkPSJNNTEzIDIzOEM1MTMgMzE0IDUwNyAzNjIgNDkyIDQwMUM0NTggNDg3IDM3OCA1MzkgMjgwIDUzOUMxMzQgNTM5IDQwIDQzMSA0MCAyNTlDNDAgODcgMTMxIC0xNSAyNzggLTE1QzM5OCAtMTUgNDgxIDUzIDUwMiAxNTlINDE4QzM5NSA5MCAzNDggNjIgMjgxIDYyQzE5NCA2MiAxMjkgMTE4IDEyNyAyMzhaTTQyNCAzMTJDNDI0IDMxMiA0MjQgMzA4IDQyMyAzMDZIMTI5QzEzNiAzOTkgMTk1IDQ2MiAyNzkgNDYyQzM2MSA0NjIgNDI0IDM5NCA0MjQgMzEyWiIvPgo8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDU2LjI5IDE3NS43MSkgc2NhbGUoMC4xNDI4NiAtMC4xNDI4NikiIGZpbGw9IiNmZmZmZmYiIGQ9Ik00NTkgMTQ3QzQ1OSAyMjUgNDE1IDI2NCAzMTEgMjg5TDIzMSAzMDhDMTYzIDMyNCAxMzQgMzQ2IDEzNCAzODNDMTM0IDQzMSAxNzcgNDYyIDI0NSA0NjJDMzEyIDQ2MiAzNDggNDMzIDM1MCAzNzhINDM4QzQzNyA0ODEgMzY5IDUzOSAyNDggNTM5QzEyNiA1MzkgNDcgNDc2IDQ3IDM3OUM0NyAyOTcgODkgMjU4IDIxMyAyMjhMMjkxIDIwOUMzNDkgMTk1IDM3MiAxNzggMzcyIDE0MEMzNzIgOTEgMzIzIDYyIDI1MCA2MkMxNzUgNjIgMTMzIDgwIDEyMiAxNjBIMzRDMzggMzkgMTA2IC0xNSAyNDMgLTE1QzM3NSAtMTUgNDU5IDQ2IDQ1OSAxNDdaIi8+CjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExMjcuNzEgMTc1LjcxKSBzY2FsZSgwLjE0Mjg2IC0wLjE0Mjg2KSIgZmlsbD0iI2ZmZmZmZiIgZD0iTTE1MyAwVjUyNEg3MFYwWk0xNjQgNjAzVjcwN0g2MFY2MDNaIi8+Cjwvc3ZnPg==" alt="Rebeca Elmúdesi logo" style="height:40px;margin-bottom:18px;opacity:.92;"/>
+      <h1>Rebeca Elmúdesi Signature Review</h1>
+      <p>Visual artist — Madrid</p>
+      <p style="margin-top:10px;font-size:13px;">Phase 5 pilot review board — 12 email-safe signature variants across 3 densities and 4 chrome behaviors. Click to select, then export your choices. Every variant is table-based, inline-style only, safe-font only, and prepared as a pickup fragment for Outlook, Gmail, and Apple Mail.</p>
+      <div style="display:flex;gap:18px;margin-top:16px;flex-wrap:wrap;">
+        <div style="background:#ffffff14;border:1px solid #ffffff1f;border-radius:12px;padding:10px 14px;">
+          <span style="display:block;font-family:'TeX Gyre Heros',serif;font-size:18px;font-weight:700;color:#ffffff;">TeX Gyre Heros</span>
+          <span style="font-family:'TeX Gyre Heros',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#ffffff99;">Heading font</span>
+        </div>
+        <div style="background:#ffffff14;border:1px solid #ffffff1f;border-radius:12px;padding:10px 14px;">
+          <span style="display:block;font-family:'TeX Gyre Heros',sans-serif;font-size:18px;color:#ffffff;">TeX Gyre Heros</span>
+          <span style="font-family:'TeX Gyre Heros',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#ffffff99;">Body font</span>
+        </div>
+        <div style="background:#ffffff14;border:1px solid #ffffff1f;border-radius:12px;padding:10px 14px;display:flex;gap:8px;align-items:center;">
+          <span style="width:24px;height:24px;border-radius:6px;background:#000000;display:inline-block;"></span>
+          <span style="width:24px;height:24px;border-radius:6px;background:#fe0200;display:inline-block;"></span>
+          <span style="width:24px;height:24px;border-radius:6px;background:#ffffff;display:inline-block;border:1px solid #ffffff33;"></span>
+          <span style="font-family:'TeX Gyre Heros',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#ffffff99;">Palette</span>
+        </div>
+      </div>
+    </header>
+    <div class="grid">
+      
+      <section class="variant" data-id="minimal-pure-text" onclick="toggleSelect(this, event)">
+        <div class="variant__meta">
+          <div class="variant__eyebrow">Variant 01</div>
+          <h2>Minimal / Pure Text</h2>
+          <p>Minimal density with pure text chrome for copy-paste email use.</p>
+          <div class="chips">
+            <span>Minimal</span>
+            <span>Pure Text</span>
+          </div>
+          <div class="actions">
+            <a href="../templates/html/signatures/minimal-pure-text.fragment.html">Fragment</a>
+            <button class="copy-btn" onclick="copyFragment('frag-minimal-pure-text', event)">Copy HTML</button>
+          </div>
+        </div>
+        <div class="variant__preview">
+          <div class="signature-shell" id="frag-minimal-pure-text"><!-- minimal-pure-text -->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:260px; max-width:420px;">
+  <tr><td style="font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:14px; line-height:19px; font-weight:700;">[Name]</td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#b4b4b4; font-size:12px; line-height:16px; ">[Title] | REBECA ELMÚDESI</td></tr>
+</table></div>
+        </div>
+      </section>
+    
+
+      <section class="variant" data-id="minimal-motif-led" onclick="toggleSelect(this, event)">
+        <div class="variant__meta">
+          <div class="variant__eyebrow">Variant 02</div>
+          <h2>Minimal / Motif-Led</h2>
+          <p>Minimal density with motif-led chrome for copy-paste email use.</p>
+          <div class="chips">
+            <span>Minimal</span>
+            <span>Motif-Led</span>
+          </div>
+          <div class="actions">
+            <a href="../templates/html/signatures/minimal-motif-led.fragment.html">Fragment</a>
+            <button class="copy-btn" onclick="copyFragment('frag-minimal-motif-led', event)">Copy HTML</button>
+          </div>
+        </div>
+        <div class="variant__preview">
+          <div class="signature-shell" id="frag-minimal-motif-led"><!-- minimal-motif-led -->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:260px; max-width:420px;">
+  <tr><td style="padding-bottom:8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+    <tr>
+      <td style="width:180px; font-size:1px; line-height:1px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:180px;">
+          <tr><td style="border-bottom:2px solid #000000; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+          <tr><td style="height:6px; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+          <tr><td style="padding-left:16px; border-bottom:2px solid #fe0200; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+        </table>
+      </td>
+      <td style="width:16px; padding-left:8px; font-size:1px; line-height:1px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:16px; height:18px; border:2px solid #fe0200;">
+          <tr><td style="font-size:1px; line-height:1px;">&nbsp;</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table></td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:14px; line-height:19px; font-weight:700;">[Name]</td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#b4b4b4; font-size:12px; line-height:16px; ">[Title] | REBECA ELMÚDESI</td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#171611; font-size:11px; line-height:15px; "><a href="https://" style="color:#fe0200; text-decoration:none;"></a></td></tr>
+</table></div>
+        </div>
+      </section>
+    
+
+      <section class="variant" data-id="minimal-rule-led" onclick="toggleSelect(this, event)">
+        <div class="variant__meta">
+          <div class="variant__eyebrow">Variant 03</div>
+          <h2>Minimal / Rule-Led</h2>
+          <p>Minimal density with rule-led chrome for copy-paste email use.</p>
+          <div class="chips">
+            <span>Minimal</span>
+            <span>Rule-Led</span>
+          </div>
+          <div class="actions">
+            <a href="../templates/html/signatures/minimal-rule-led.fragment.html">Fragment</a>
+            <button class="copy-btn" onclick="copyFragment('frag-minimal-rule-led', event)">Copy HTML</button>
+          </div>
+        </div>
+        <div class="variant__preview">
+          <div class="signature-shell" id="frag-minimal-rule-led"><!-- minimal-rule-led -->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:260px; max-width:420px;">
+  <tr><td style="padding-bottom:8px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:220px;"><tr><td style="border-bottom:2px solid #000000; font-size:1px; line-height:1px;">&nbsp;</td></tr></table></td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:14px; line-height:19px; font-weight:700;">[Name]</td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#b4b4b4; font-size:12px; line-height:16px; ">[Title] | REBECA ELMÚDESI</td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#171611; font-size:11px; line-height:15px; "><a href="https://" style="color:#fe0200; text-decoration:none;"></a></td></tr>
+</table></div>
+        </div>
+      </section>
+    
+
+      <section class="variant" data-id="minimal-contact-led" onclick="toggleSelect(this, event)">
+        <div class="variant__meta">
+          <div class="variant__eyebrow">Variant 04</div>
+          <h2>Minimal / Two-Column Contact-Led</h2>
+          <p>Minimal density with two-column contact-led chrome for copy-paste email use.</p>
+          <div class="chips">
+            <span>Minimal</span>
+            <span>Two-Column Contact-Led</span>
+          </div>
+          <div class="actions">
+            <a href="../templates/html/signatures/minimal-contact-led.fragment.html">Fragment</a>
+            <button class="copy-btn" onclick="copyFragment('frag-minimal-contact-led', event)">Copy HTML</button>
+          </div>
+        </div>
+        <div class="variant__preview">
+          <div class="signature-shell" id="frag-minimal-contact-led"><!-- minimal-contact-led -->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; font-family:Arial, Helvetica, sans-serif; width:420px; max-width:420px;">
+  <tr><td colspan="2" style="padding-bottom:8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+    <tr>
+      <td style="width:180px; font-size:1px; line-height:1px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:180px;">
+          <tr><td style="border-bottom:2px solid #000000; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+          <tr><td style="height:6px; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+          <tr><td style="padding-left:16px; border-bottom:2px solid #fe0200; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+        </table>
+      </td>
+      <td style="width:16px; padding-left:8px; font-size:1px; line-height:1px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:16px; height:18px; border:2px solid #fe0200;">
+          <tr><td style="font-size:1px; line-height:1px;">&nbsp;</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table></td></tr>
+  <tr>
+    <td style="vertical-align:top; padding-right:18px;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr><td style="font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:15px; line-height:20px; font-weight:700;">[Name]</td></tr>
+        <tr><td style="font-family:Arial, Helvetica, sans-serif; color:#b4b4b4; font-size:12px; line-height:16px; ">[Title] · REBECA ELMÚDESI</td></tr>
+        <tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">hello@example.com</td></tr>
+        <tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">+[Phone]</td></tr>
+      </table>
+    </td>
+    <td style="vertical-align:top; padding-left:18px; border-left:1px solid #b4b4b459;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr><td style="font-family:'Courier New', Courier, monospace; color:#171611; font-size:11px; line-height:15px; "><a href="https://" style="color:#fe0200; text-decoration:none;"></a></td></tr>
+        <tr><td style="font-family:'Courier New', Courier, monospace; color:#171611; font-size:11px; line-height:15px; "><a href="https://[LinkedIn]" style="color:#fe0200; text-decoration:none;">LinkedIn</a></td></tr>
+        
+        <tr><td style="font-family:Arial, Helvetica, sans-serif; color:#c8c8c8; font-size:9px; line-height:12px; font-style:italic;">Visual artist — Madrid</td></tr>
+      </table>
+    </td>
+  </tr>
+</table></div>
+        </div>
+      </section>
+    
+
+      <section class="variant" data-id="standard-pure-text" onclick="toggleSelect(this, event)">
+        <div class="variant__meta">
+          <div class="variant__eyebrow">Variant 05</div>
+          <h2>Standard / Pure Text</h2>
+          <p>Standard density with pure text chrome for copy-paste email use.</p>
+          <div class="chips">
+            <span>Standard</span>
+            <span>Pure Text</span>
+          </div>
+          <div class="actions">
+            <a href="../templates/html/signatures/standard-pure-text.fragment.html">Fragment</a>
+            <button class="copy-btn" onclick="copyFragment('frag-standard-pure-text', event)">Copy HTML</button>
+          </div>
+        </div>
+        <div class="variant__preview">
+          <div class="signature-shell" id="frag-standard-pure-text"><!-- standard-pure-text -->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:300px; max-width:420px;">
+  <tr><td style="font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:15px; line-height:20px; font-weight:700;">[Name]</td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#b4b4b4; font-size:12px; line-height:16px; ">[Title] · REBECA ELMÚDESI</td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#171611; font-size:11px; line-height:15px; "><a href="https://" style="color:#fe0200; text-decoration:none;"></a></td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">hello@example.com</td></tr>
+</table></div>
+        </div>
+      </section>
+    
+
+      <section class="variant" data-id="standard-motif-led" onclick="toggleSelect(this, event)">
+        <div class="variant__meta">
+          <div class="variant__eyebrow">Variant 06</div>
+          <h2>Standard / Motif-Led</h2>
+          <p>Standard density with motif-led chrome for copy-paste email use.</p>
+          <div class="chips">
+            <span>Standard</span>
+            <span>Motif-Led</span>
+          </div>
+          <div class="actions">
+            <a href="../templates/html/signatures/standard-motif-led.fragment.html">Fragment</a>
+            <button class="copy-btn" onclick="copyFragment('frag-standard-motif-led', event)">Copy HTML</button>
+          </div>
+        </div>
+        <div class="variant__preview">
+          <div class="signature-shell" id="frag-standard-motif-led"><!-- standard-motif-led -->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:300px; max-width:420px;">
+  <tr><td style="padding-bottom:8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+    <tr>
+      <td style="width:180px; font-size:1px; line-height:1px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:180px;">
+          <tr><td style="border-bottom:2px solid #000000; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+          <tr><td style="height:6px; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+          <tr><td style="padding-left:16px; border-bottom:2px solid #fe0200; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+        </table>
+      </td>
+      <td style="width:16px; padding-left:8px; font-size:1px; line-height:1px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:16px; height:18px; border:2px solid #fe0200;">
+          <tr><td style="font-size:1px; line-height:1px;">&nbsp;</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table></td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:15px; line-height:20px; font-weight:700;">[Name]</td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#b4b4b4; font-size:12px; line-height:16px; ">[Title] · REBECA ELMÚDESI</td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#171611; font-size:11px; line-height:15px; "><a href="https://" style="color:#fe0200; text-decoration:none;"></a></td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">hello@example.com</td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#c8c8c8; font-size:9px; line-height:12px; font-style:italic;">Visual artist — Madrid</td></tr>
+</table></div>
+        </div>
+      </section>
+    
+
+      <section class="variant" data-id="standard-rule-led" onclick="toggleSelect(this, event)">
+        <div class="variant__meta">
+          <div class="variant__eyebrow">Variant 07</div>
+          <h2>Standard / Rule-Led</h2>
+          <p>Standard density with rule-led chrome for copy-paste email use.</p>
+          <div class="chips">
+            <span>Standard</span>
+            <span>Rule-Led</span>
+          </div>
+          <div class="actions">
+            <a href="../templates/html/signatures/standard-rule-led.fragment.html">Fragment</a>
+            <button class="copy-btn" onclick="copyFragment('frag-standard-rule-led', event)">Copy HTML</button>
+          </div>
+        </div>
+        <div class="variant__preview">
+          <div class="signature-shell" id="frag-standard-rule-led"><!-- standard-rule-led -->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:300px; max-width:420px;">
+  <tr><td style="padding-bottom:8px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:220px;"><tr><td style="border-bottom:2px solid #000000; font-size:1px; line-height:1px;">&nbsp;</td></tr></table></td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:15px; line-height:20px; font-weight:700;">[Name]</td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#b4b4b4; font-size:12px; line-height:16px; ">[Title] · REBECA ELMÚDESI</td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#171611; font-size:11px; line-height:15px; "><a href="https://" style="color:#fe0200; text-decoration:none;"></a></td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">hello@example.com</td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#c8c8c8; font-size:9px; line-height:12px; font-style:italic;">Visual artist — Madrid</td></tr>
+</table></div>
+        </div>
+      </section>
+    
+
+      <section class="variant" data-id="standard-contact-led" onclick="toggleSelect(this, event)">
+        <div class="variant__meta">
+          <div class="variant__eyebrow">Variant 08</div>
+          <h2>Standard / Two-Column Contact-Led</h2>
+          <p>Standard density with two-column contact-led chrome for copy-paste email use.</p>
+          <div class="chips">
+            <span>Standard</span>
+            <span>Two-Column Contact-Led</span>
+          </div>
+          <div class="actions">
+            <a href="../templates/html/signatures/standard-contact-led.fragment.html">Fragment</a>
+            <button class="copy-btn" onclick="copyFragment('frag-standard-contact-led', event)">Copy HTML</button>
+          </div>
+        </div>
+        <div class="variant__preview">
+          <div class="signature-shell" id="frag-standard-contact-led"><!-- standard-contact-led -->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; font-family:Arial, Helvetica, sans-serif; width:420px; max-width:420px;">
+  <tr><td colspan="2" style="padding-bottom:8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+    <tr>
+      <td style="width:180px; font-size:1px; line-height:1px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:180px;">
+          <tr><td style="border-bottom:2px solid #000000; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+          <tr><td style="height:6px; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+          <tr><td style="padding-left:16px; border-bottom:2px solid #fe0200; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+        </table>
+      </td>
+      <td style="width:16px; padding-left:8px; font-size:1px; line-height:1px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:16px; height:18px; border:2px solid #fe0200;">
+          <tr><td style="font-size:1px; line-height:1px;">&nbsp;</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table></td></tr>
+  <tr>
+    <td style="vertical-align:top; padding-right:18px;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr><td style="font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:15px; line-height:20px; font-weight:700;">[Name]</td></tr>
+        <tr><td style="font-family:Arial, Helvetica, sans-serif; color:#b4b4b4; font-size:12px; line-height:16px; ">[Title] · REBECA ELMÚDESI</td></tr>
+        <tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">hello@example.com</td></tr>
+        <tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">+[Phone]</td></tr>
+      </table>
+    </td>
+    <td style="vertical-align:top; padding-left:18px; border-left:1px solid #b4b4b459;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr><td style="font-family:'Courier New', Courier, monospace; color:#171611; font-size:11px; line-height:15px; "><a href="https://" style="color:#fe0200; text-decoration:none;"></a></td></tr>
+        <tr><td style="font-family:'Courier New', Courier, monospace; color:#171611; font-size:11px; line-height:15px; "><a href="https://[LinkedIn]" style="color:#fe0200; text-decoration:none;">LinkedIn</a></td></tr>
+        
+        <tr><td style="font-family:Arial, Helvetica, sans-serif; color:#c8c8c8; font-size:9px; line-height:12px; font-style:italic;">Visual artist — Madrid</td></tr>
+      </table>
+    </td>
+  </tr>
+</table></div>
+        </div>
+      </section>
+    
+
+      <section class="variant" data-id="extended-pure-text" onclick="toggleSelect(this, event)">
+        <div class="variant__meta">
+          <div class="variant__eyebrow">Variant 09</div>
+          <h2>Extended / Pure Text</h2>
+          <p>Extended density with pure text chrome for copy-paste email use.</p>
+          <div class="chips">
+            <span>Extended</span>
+            <span>Pure Text</span>
+          </div>
+          <div class="actions">
+            <a href="../templates/html/signatures/extended-pure-text.fragment.html">Fragment</a>
+            <button class="copy-btn" onclick="copyFragment('frag-extended-pure-text', event)">Copy HTML</button>
+          </div>
+        </div>
+        <div class="variant__preview">
+          <div class="signature-shell" id="frag-extended-pure-text"><!-- extended-pure-text -->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:340px; max-width:420px;">
+  <tr><td style="font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:15px; line-height:20px; font-weight:700;">[Name]</td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#b4b4b4; font-size:12px; line-height:16px; ">[Title] · REBECA ELMÚDESI</td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#171611; font-size:11px; line-height:15px; "><a href="https://" style="color:#fe0200; text-decoration:none;"></a></td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">hello@example.com</td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">+[Phone]</td></tr>
+</table></div>
+        </div>
+      </section>
+    
+
+      <section class="variant" data-id="extended-motif-led" onclick="toggleSelect(this, event)">
+        <div class="variant__meta">
+          <div class="variant__eyebrow">Variant 10</div>
+          <h2>Extended / Motif-Led</h2>
+          <p>Extended density with motif-led chrome for copy-paste email use.</p>
+          <div class="chips">
+            <span>Extended</span>
+            <span>Motif-Led</span>
+          </div>
+          <div class="actions">
+            <a href="../templates/html/signatures/extended-motif-led.fragment.html">Fragment</a>
+            <button class="copy-btn" onclick="copyFragment('frag-extended-motif-led', event)">Copy HTML</button>
+          </div>
+        </div>
+        <div class="variant__preview">
+          <div class="signature-shell" id="frag-extended-motif-led"><!-- extended-motif-led -->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:340px; max-width:420px;">
+  <tr><td style="padding-bottom:8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+    <tr>
+      <td style="width:180px; font-size:1px; line-height:1px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:180px;">
+          <tr><td style="border-bottom:2px solid #000000; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+          <tr><td style="height:6px; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+          <tr><td style="padding-left:16px; border-bottom:2px solid #fe0200; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+        </table>
+      </td>
+      <td style="width:16px; padding-left:8px; font-size:1px; line-height:1px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:16px; height:18px; border:2px solid #fe0200;">
+          <tr><td style="font-size:1px; line-height:1px;">&nbsp;</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table></td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:15px; line-height:20px; font-weight:700;">[Name]</td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#b4b4b4; font-size:12px; line-height:16px; ">[Title] · REBECA ELMÚDESI</td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#171611; font-size:11px; line-height:15px; "><a href="https://" style="color:#fe0200; text-decoration:none;"></a></td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">hello@example.com</td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">+[Phone]</td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#c8c8c8; font-size:9px; line-height:12px; font-style:italic;">Visual artist — Madrid</td></tr>
+</table></div>
+        </div>
+      </section>
+    
+
+      <section class="variant" data-id="extended-rule-led" onclick="toggleSelect(this, event)">
+        <div class="variant__meta">
+          <div class="variant__eyebrow">Variant 11</div>
+          <h2>Extended / Rule-Led</h2>
+          <p>Extended density with rule-led chrome for copy-paste email use.</p>
+          <div class="chips">
+            <span>Extended</span>
+            <span>Rule-Led</span>
+          </div>
+          <div class="actions">
+            <a href="../templates/html/signatures/extended-rule-led.fragment.html">Fragment</a>
+            <button class="copy-btn" onclick="copyFragment('frag-extended-rule-led', event)">Copy HTML</button>
+          </div>
+        </div>
+        <div class="variant__preview">
+          <div class="signature-shell" id="frag-extended-rule-led"><!-- extended-rule-led -->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:340px; max-width:420px;">
+  <tr><td style="padding-bottom:8px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:220px;"><tr><td style="border-bottom:2px solid #000000; font-size:1px; line-height:1px;">&nbsp;</td></tr></table></td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:15px; line-height:20px; font-weight:700;">[Name]</td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#b4b4b4; font-size:12px; line-height:16px; ">[Title] · REBECA ELMÚDESI</td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#171611; font-size:11px; line-height:15px; "><a href="https://" style="color:#fe0200; text-decoration:none;"></a></td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">hello@example.com</td></tr>
+<tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">+[Phone]</td></tr>
+<tr><td style="font-family:Arial, Helvetica, sans-serif; color:#c8c8c8; font-size:9px; line-height:12px; font-style:italic;">Visual artist — Madrid</td></tr>
+</table></div>
+        </div>
+      </section>
+    
+
+      <section class="variant" data-id="extended-contact-led" onclick="toggleSelect(this, event)">
+        <div class="variant__meta">
+          <div class="variant__eyebrow">Variant 12</div>
+          <h2>Extended / Two-Column Contact-Led</h2>
+          <p>Extended density with two-column contact-led chrome for copy-paste email use.</p>
+          <div class="chips">
+            <span>Extended</span>
+            <span>Two-Column Contact-Led</span>
+          </div>
+          <div class="actions">
+            <a href="../templates/html/signatures/extended-contact-led.fragment.html">Fragment</a>
+            <button class="copy-btn" onclick="copyFragment('frag-extended-contact-led', event)">Copy HTML</button>
+          </div>
+        </div>
+        <div class="variant__preview">
+          <div class="signature-shell" id="frag-extended-contact-led"><!-- extended-contact-led -->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; font-family:Arial, Helvetica, sans-serif; width:420px; max-width:420px;">
+  <tr><td colspan="2" style="padding-bottom:8px;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+    <tr>
+      <td style="width:180px; font-size:1px; line-height:1px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:180px;">
+          <tr><td style="border-bottom:2px solid #000000; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+          <tr><td style="height:6px; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+          <tr><td style="padding-left:16px; border-bottom:2px solid #fe0200; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+        </table>
+      </td>
+      <td style="width:16px; padding-left:8px; font-size:1px; line-height:1px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; width:16px; height:18px; border:2px solid #fe0200;">
+          <tr><td style="font-size:1px; line-height:1px;">&nbsp;</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table></td></tr>
+  <tr>
+    <td style="vertical-align:top; padding-right:18px;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr><td style="font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:15px; line-height:20px; font-weight:700;">[Name]</td></tr>
+        <tr><td style="font-family:Arial, Helvetica, sans-serif; color:#b4b4b4; font-size:12px; line-height:16px; ">[Title] · REBECA ELMÚDESI</td></tr>
+        <tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">hello@example.com</td></tr>
+        <tr><td style="font-family:'Courier New', Courier, monospace; color:#b4b4b4; font-size:11px; line-height:15px; ">+[Phone]</td></tr>
+      </table>
+    </td>
+    <td style="vertical-align:top; padding-left:18px; border-left:1px solid #b4b4b459;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr><td style="font-family:'Courier New', Courier, monospace; color:#171611; font-size:11px; line-height:15px; "><a href="https://" style="color:#fe0200; text-decoration:none;"></a></td></tr>
+        <tr><td style="font-family:'Courier New', Courier, monospace; color:#171611; font-size:11px; line-height:15px; "><a href="https://[LinkedIn]" style="color:#fe0200; text-decoration:none;">LinkedIn</a></td></tr>
+        
+        <tr><td style="font-family:Arial, Helvetica, sans-serif; color:#c8c8c8; font-size:9px; line-height:12px; font-style:italic;">Visual artist — Madrid</td></tr>
+      </table>
+    </td>
+  </tr>
+</table></div>
+        </div>
+      </section>
+    
+    </div>
+  </main>
+  <div class="bottom-bar">
+    <div class="bottom-bar__count"><strong id="sel-count">0</strong> / 4 target selected</div>
+    <button onclick="exportSelection()">Copy Selected IDs</button>
+  </div>
+  <div class="toast" id="toast">Copied to clipboard</div>
+  <script>
+    function toggleSelect(el, event) {
+      if (event && (event.target.tagName === 'A' || event.target.tagName === 'BUTTON')) return;
+      el.classList.toggle('selected');
+      updateCounts();
+    }
+    function updateCounts() {
+      var count = document.querySelectorAll('.variant.selected').length;
+      document.getElementById('sel-count').textContent = count;
+    }
+    function exportSelection() {
+      var ids = Array.from(document.querySelectorAll('.variant.selected'))
+        .map(function(el) { return el.getAttribute('data-id'); })
+        .join(', ');
+      if (!ids) { ids = '(none selected)'; }
+      navigator.clipboard.writeText(ids).then(function() { showToast('Copied to clipboard'); });
+    }
+    function copyFragment(fragId, event) {
+      event.stopPropagation();
+      var el = document.getElementById(fragId);
+      if (!el) return;
+      navigator.clipboard.writeText(el.innerHTML.trim()).then(function() { showToast('Fragment HTML copied'); });
+    }
+    function showToast(msg) {
+      var toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(function() { toast.classList.remove('show'); }, 1800);
+    }
+    updateCounts();
+  </script>
+</body>
+</html>
