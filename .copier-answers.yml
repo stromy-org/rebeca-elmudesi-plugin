@@ -1,12 +1,11 @@
 # Changes here will be overwritten by Copier; DO NOT edit manually.
-_commit: 7498731
+_commit: v1.0.0
 _src_path: gh:stromy-org/claude-plugin-template
 author_name: William Masquelier
 client_name: Rebeca Elmudesi
 client_slug: rebecaelmudesi
 description: Claude Code plugin for Rebeca Elmudesi — self-service website and brand
     asset editing via asset-broker
-enable_asset_broker: true
 enable_stromy_format: false
 github_org: stromy-org
 include_mcp: false
