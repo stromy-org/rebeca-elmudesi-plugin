@@ -10,6 +10,7 @@
         "hero"
       ],
       "orientation": "landscape",
+      "theme": "si-me-ves-te-veo",
       "series": "Si me ves, te veo (If you see me, I see you)",
       "title": "Habitación que habla",
       "medium": "Oil pastel and acrylic on canvas",
@@ -24,6 +25,7 @@
         "section"
       ],
       "orientation": "portrait",
+      "theme": "si-me-ves-te-veo",
       "series": "Si me ves, te veo (If you see me, I see you)",
       "title": "Lo estamos viendo todo",
       "medium": "Oil pastel and acrylic on canvas",
@@ -38,6 +40,7 @@
         "section"
       ],
       "orientation": "landscape",
+      "theme": "si-me-ves-te-veo",
       "series": "Si me ves, te veo (If you see me, I see you)",
       "title": "The naked eye",
       "medium": "Oil pastel, acrylic and marble dust on canvas",
@@ -52,6 +55,7 @@
         "section"
       ],
       "orientation": "portrait",
+      "theme": "si-me-ves-te-veo",
       "series": "Si me ves, te veo (If you see me, I see you)",
       "title": "De narices",
       "medium": "Oil pastel and acrylic on canvas",
@@ -66,6 +70,7 @@
         "section"
       ],
       "orientation": "landscape",
+      "theme": "si-me-ves-te-veo",
       "series": "Si me ves, te veo (If you see me, I see you)",
       "title": "Metro de Madrid",
       "medium": "Oil pastel and acrylic on canvas",
@@ -80,6 +85,7 @@
         "section"
       ],
       "orientation": "landscape",
+      "theme": "amsterdam-foreigner",
       "series": "Amsterdam — Through the Eyes of a Foreigner",
       "title": "Amsterdam Mouthful",
       "medium": "Oil pastel on wood",
@@ -94,6 +100,7 @@
         "background"
       ],
       "orientation": "panoramic",
+      "theme": "amsterdam-foreigner",
       "series": "Amsterdam — Through the Eyes of a Foreigner",
       "title": "Amsterdam Landscape 1",
       "medium": "Oil pastel on wood",
@@ -107,6 +114,7 @@
         "section"
       ],
       "orientation": "square",
+      "theme": "amsterdam-foreigner",
       "series": "Amsterdam — Through the Eyes of a Foreigner",
       "title": "Nature's Paintbrush, Blue",
       "medium": "Oil pastel on wood",
@@ -120,6 +128,7 @@
         "section"
       ],
       "orientation": "portrait",
+      "theme": "naive-optimism",
       "series": "Naive Optimism",
       "title": "Everything I Will Ever Need Is Within Me",
       "medium": "Acrylic and oil pastel on canvas",
@@ -134,6 +143,7 @@
         "section"
       ],
       "orientation": "portrait",
+      "theme": "naive-optimism",
       "series": "Naive Optimism",
       "title": "What Are You Looking At?",
       "medium": "Acrylic and oil pastel on canvas",
