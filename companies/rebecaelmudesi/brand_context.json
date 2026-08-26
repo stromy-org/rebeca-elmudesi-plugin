@@ -372,7 +372,7 @@
       {
         "file": "si-me-ves-te-veo--lo-estamos-viendo-todo.jpg",
         "roles": [
-          "feature"
+          "section"
         ],
         "orientation": "portrait",
         "series": "Si me ves, te veo (If you see me, I see you)",
@@ -386,7 +386,7 @@
       {
         "file": "si-me-ves-te-veo--the-naked-eye.jpg",
         "roles": [
-          "feature"
+          "section"
         ],
         "orientation": "landscape",
         "series": "Si me ves, te veo (If you see me, I see you)",
@@ -400,7 +400,7 @@
       {
         "file": "si-me-ves-te-veo--de-narices.jpg",
         "roles": [
-          "detail"
+          "section"
         ],
         "orientation": "portrait",
         "series": "Si me ves, te veo (If you see me, I see you)",
@@ -428,7 +428,7 @@
       {
         "file": "amsterdam--mouthful.jpg",
         "roles": [
-          "feature"
+          "section"
         ],
         "orientation": "landscape",
         "series": "Amsterdam — Through the Eyes of a Foreigner",
@@ -455,7 +455,7 @@
       {
         "file": "amsterdam--natures-paintbrush-blue.jpg",
         "roles": [
-          "detail"
+          "section"
         ],
         "orientation": "square",
         "series": "Amsterdam — Through the Eyes of a Foreigner",
@@ -468,7 +468,7 @@
       {
         "file": "naive-optimism--everything-i-will-ever-need.jpg",
         "roles": [
-          "feature"
+          "section"
         ],
         "orientation": "portrait",
         "series": "Naive Optimism",
@@ -482,7 +482,7 @@
       {
         "file": "naive-optimism--what-are-you-looking-at.jpg",
         "roles": [
-          "detail"
+          "section"
         ],
         "orientation": "portrait",
         "series": "Naive Optimism",

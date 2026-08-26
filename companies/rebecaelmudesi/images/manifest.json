@@ -5,7 +5,10 @@
   "images": [
     {
       "file": "si-me-ves-te-veo--habitacion-que-habla.jpg",
-      "roles": ["cover", "hero"],
+      "roles": [
+        "cover",
+        "hero"
+      ],
       "orientation": "landscape",
       "series": "Si me ves, te veo (If you see me, I see you)",
       "title": "Habitación que habla",
@@ -17,7 +20,9 @@
     },
     {
       "file": "si-me-ves-te-veo--lo-estamos-viendo-todo.jpg",
-      "roles": ["feature"],
+      "roles": [
+        "section"
+      ],
       "orientation": "portrait",
       "series": "Si me ves, te veo (If you see me, I see you)",
       "title": "Lo estamos viendo todo",
@@ -29,7 +34,9 @@
     },
     {
       "file": "si-me-ves-te-veo--the-naked-eye.jpg",
-      "roles": ["feature"],
+      "roles": [
+        "section"
+      ],
       "orientation": "landscape",
       "series": "Si me ves, te veo (If you see me, I see you)",
       "title": "The naked eye",
@@ -41,7 +48,9 @@
     },
     {
       "file": "si-me-ves-te-veo--de-narices.jpg",
-      "roles": ["detail"],
+      "roles": [
+        "section"
+      ],
       "orientation": "portrait",
       "series": "Si me ves, te veo (If you see me, I see you)",
       "title": "De narices",
@@ -53,7 +62,9 @@
     },
     {
       "file": "si-me-ves-te-veo--metro-de-madrid.jpg",
-      "roles": ["section"],
+      "roles": [
+        "section"
+      ],
       "orientation": "landscape",
       "series": "Si me ves, te veo (If you see me, I see you)",
       "title": "Metro de Madrid",
@@ -65,7 +76,9 @@
     },
     {
       "file": "amsterdam--mouthful.jpg",
-      "roles": ["feature"],
+      "roles": [
+        "section"
+      ],
       "orientation": "landscape",
       "series": "Amsterdam — Through the Eyes of a Foreigner",
       "title": "Amsterdam Mouthful",
@@ -76,7 +89,10 @@
     },
     {
       "file": "amsterdam--landscape-1.jpg",
-      "roles": ["section", "background"],
+      "roles": [
+        "section",
+        "background"
+      ],
       "orientation": "panoramic",
       "series": "Amsterdam — Through the Eyes of a Foreigner",
       "title": "Amsterdam Landscape 1",
@@ -87,7 +103,9 @@
     },
     {
       "file": "amsterdam--natures-paintbrush-blue.jpg",
-      "roles": ["detail"],
+      "roles": [
+        "section"
+      ],
       "orientation": "square",
       "series": "Amsterdam — Through the Eyes of a Foreigner",
       "title": "Nature's Paintbrush, Blue",
@@ -98,7 +116,9 @@
     },
     {
       "file": "naive-optimism--everything-i-will-ever-need.jpg",
-      "roles": ["feature"],
+      "roles": [
+        "section"
+      ],
       "orientation": "portrait",
       "series": "Naive Optimism",
       "title": "Everything I Will Ever Need Is Within Me",
@@ -110,7 +130,9 @@
     },
     {
       "file": "naive-optimism--what-are-you-looking-at.jpg",
-      "roles": ["detail"],
+      "roles": [
+        "section"
+      ],
       "orientation": "portrait",
       "series": "Naive Optimism",
       "title": "What Are You Looking At?",
