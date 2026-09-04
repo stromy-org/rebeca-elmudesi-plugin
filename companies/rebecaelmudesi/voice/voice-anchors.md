@@ -16,7 +16,7 @@ prose — the restraint is the voice.
 > and surreal disruptions, creating images that feel at once intimate and strangely
 > exposed.
 
-## Anchor — wall-label register (from manifest, faithful)
+## Anchor — wall-label register (verbatim from the work manifest)
 
 > *Habitación que habla*
 > Oil pastel and acrylic on canvas
