@@ -12,14 +12,14 @@ Claude Code plugin for Rebeca Elmudesi — self-service website and brand asset 
 
 Via marketplace:
 ```bash
-/plugin marketplace add stromy-org/rebecaelmudesi-marketplace
+/plugin marketplace add stromy-org/rebeca-elmudesi-marketplace
 /plugin install rebeca-elmudesi
 ```
 
 For local development:
 ```bash
-git clone https://github.com/stromy-org/rebeca-elmudesi.git
-cd rebeca-elmudesi
+git clone https://github.com/stromy-org/rebeca-elmudesi-plugin.git
+cd rebeca-elmudesi-plugin
 npm install
 uv sync
 claude --plugin-dir .
