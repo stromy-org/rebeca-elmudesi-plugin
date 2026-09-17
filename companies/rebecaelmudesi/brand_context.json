@@ -34,6 +34,7 @@
         "sans-serif"
       ],
       "webSafe": "Arial",
+      "webSafeAvailability": "web-safe",
       "rightsStatus": "unknown"
     },
     "body": {
@@ -46,6 +47,7 @@
         "sans-serif"
       ],
       "webSafe": "Arial",
+      "webSafeAvailability": "web-safe",
       "rightsStatus": "unknown"
     },
     "mono": {
@@ -58,6 +60,7 @@
         "sans-serif"
       ],
       "webSafe": "Arial",
+      "webSafeAvailability": "web-safe",
       "rightsStatus": "unknown"
     }
   },
@@ -577,6 +580,6 @@
       "patterns",
       "photo"
     ],
-    "sha256": "e4f953609a1eff1cca170fcd01de34f32930ac0f810e457cc944fbed9159f90c"
+    "sha256": "a5c1a22008e9a70f5373f4ea71152b7cebd814868c7c12b3bcfc0f84dd615d1c"
   }
 }
