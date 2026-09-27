@@ -1,7 +1,6 @@
 {
-  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "rebeca-elmudesi",
-  "displayName": "Rebeca Elmúdesi",
   "version": "0.3.27",
   "description": "Plugin for Rebeca Elmudesi — branded presentations and documents about her art via stromy-format, plus self-service website and brand asset editing via asset-broker",
   "author": {
@@ -9,8 +8,5 @@
   },
   "repository": "https://github.com/stromy-org/rebeca-elmudesi-plugin",
   "license": "UNLICENSED",
-  "keywords": [],
-  "skills": [
-    "./.claude-plugin/skills"
-  ]
+  "keywords": []
 }
