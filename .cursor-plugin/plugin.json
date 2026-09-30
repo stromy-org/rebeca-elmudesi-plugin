@@ -1,5 +1,6 @@
 {
   "name": "rebeca-elmudesi",
+  "displayName": "Rebeca Elmúdesi",
   "version": "0.3.28",
   "description": "Plugin for Rebeca Elmudesi — branded presentations and documents about her art via stromy-format, plus self-service website and brand asset editing via asset-broker",
   "author": {
@@ -8,5 +9,12 @@
   "repository": "https://github.com/stromy-org/rebeca-elmudesi-plugin",
   "license": "UNLICENSED",
   "keywords": [],
-  "mcpServers": "./mcp.json"
+  "skills": [
+    "./skills"
+  ],
+  "mcpServers": {
+    "stromy-format": {
+      "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
+    }
+  }
 }
