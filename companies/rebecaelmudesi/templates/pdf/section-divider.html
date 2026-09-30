@@ -1,0 +1,19 @@
+<!--
+  Rebeca Elmúdesi PDF section divider — white ground, no bleed.
+  Injected: {{TOKENS_CSS}} {{FONT_FACES}} {{PART_LABEL}} {{SECTION_TITLE}}
+-->
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+@page { size: A4; margin: 0; }
+{{TOKENS_CSS}}
+{{FONT_FACES}}
+html,body{margin:0;padding:0}
+body{width:210mm;height:297mm;background:var(--brand-background,#fff);color:var(--brand-text,#000);
+ font-family:var(--font-body,Helvetica,Arial,sans-serif);position:relative}
+.wrap{position:absolute;inset:24mm;display:flex;flex-direction:column;justify-content:center}
+.part{font-size:10pt;letter-spacing:.18em;text-transform:uppercase;color:var(--brand-accent,#fe0200)}
+.rule{height:1px;background:var(--brand-line,#000);margin:6mm 0;width:100%}
+h2{font-family:var(--font-heading);font-weight:400;font-size:30pt;margin:0;max-width:150mm}
+</style></head><body><div class="wrap">
+ <div class="part">{{PART_LABEL}}</div><div class="rule"></div>
+ <h2>{{SECTION_TITLE}}</h2>
+</div></body></html>

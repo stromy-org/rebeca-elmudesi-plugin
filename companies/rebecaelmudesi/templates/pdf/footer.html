@@ -1,0 +1,11 @@
+<!--
+  Rebeca Elmúdesi PDF footer — Playwright footerTemplate.
+  Playwright resolves only: date,title,url,pageNumber,totalPages.
+  Substitute {{BRAND_NAME}} {{CONFIDENTIALITY}} before passing to render_pdf.
+-->
+<div style="font-size:8pt;font-family:Helvetica,Arial,sans-serif;color:#b4b4b4;width:100%;
+ padding:0 24mm;display:flex;justify-content:space-between;border-top:1px solid #000;padding-top:3mm;">
+  <span>{{BRAND_NAME}}</span>
+  <span>{{CONFIDENTIALITY}}</span>
+  <span><span class="pageNumber"></span> / <span class="totalPages"></span></span>
+</div>

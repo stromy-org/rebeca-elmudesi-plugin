@@ -1,0 +1,21 @@
+<!--
+  Rebeca Elmúdesi anchor shell. Consumed by format-pptx-hd / format-pdf-hd render-anchors.
+  ÉPURÉ BRAND: white ground, black text, hairline rules, thin even margins, NO bleed, NO overlay on artwork.
+  Injected: {{TOKENS_CSS}} {{FONT_FACES}} {{LOGO_URL}} {{MARK_URL}} {{TITLE}} {{SUBTITLE}} {{OVERLINE}} {{PAGE}} {{PAGES}} {{DATE}} {{CONFIDENTIALITY}}
+-->
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+{{TOKENS_CSS}}
+{{FONT_FACES}}
+html,body{margin:0;padding:0}
+body{width:1280px;height:960px;background:var(--brand-background,#fff);color:var(--brand-text,#000);
+ font-family:var(--font-body,Helvetica,Arial,sans-serif);position:relative}
+.head{position:absolute;top:56px;left:64px;right:64px}
+.head h3{font-family:var(--font-heading);font-weight:700;font-size:22pt;margin:0 0 12pt}
+.head .rule{height:1px;background:var(--brand-line,#000)}
+.body{position:absolute;top:150px;left:64px;right:64px;bottom:80px}
+/* Slide body is the author's space. Keep images contained (object-fit:contain), text justified. */
+</style></head><body>
+ <div class="head"><h3>{{TITLE}}</h3><div class="rule"></div></div>
+ <div class="body"><!-- author content here --></div>
+ {{FOOTER_BAR}}
+</body></html>

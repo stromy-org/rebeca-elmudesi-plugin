@@ -1,0 +1,385 @@
+{
+  "meta": {
+    "tier": "producer",
+    "displayName": "Rebeca Elm\u00fadesi",
+    "tagline": "Visual artist \u2014 Madrid",
+    "industry": "Fine art / painting",
+    "audience": "Collectors, galleries, curators, commission clients",
+    "locale": [
+      "en",
+      "es-ES"
+    ],
+    "direction": "Quiet, editorial, gallery-neutral. Work rooted in looking.",
+    "archetype": {
+      "primary": "creator",
+      "secondary": "sage"
+    }
+  },
+  "colors": {
+    "primary": "#000000",
+    "accent": "#fe0200",
+    "background": "#ffffff",
+    "backgroundAlt": "#ffffff",
+    "text": "#000000",
+    "textLight": "#b4b4b4",
+    "line": "#000000",
+    "secondary": "#000000",
+    "success": "#2e7d4f",
+    "warning": "#b58900",
+    "error": "#fe0200"
+  },
+  "fonts": {
+    "heading": {
+      "family": "TeX Gyre Heros",
+      "fallback": "Helvetica, Arial, sans-serif",
+      "weight": "700",
+      "fallbackStack": [
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "webSafe": "Arial"
+    },
+    "body": {
+      "family": "TeX Gyre Heros",
+      "fallback": "Helvetica, Arial, sans-serif",
+      "weight": "400",
+      "fallbackStack": [
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "webSafe": "Arial"
+    },
+    "mono": {
+      "family": "TeX Gyre Heros",
+      "fallback": "Helvetica, Arial, sans-serif",
+      "weight": "400",
+      "fallbackStack": [
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "webSafe": "Arial"
+    }
+  },
+  "logo": {
+    "primary": "logos/wordmark.svg",
+    "white": "logos/wordmark-white.svg",
+    "accent": "logos/wordmark-accent.svg",
+    "mark": "logos/mark.svg",
+    "markBlack": "logos/mark-black.svg",
+    "markOnDark": "logos/mark-on-dark.svg",
+    "markBare": "logos/mark-bare.svg",
+    "png": "logos/wordmark.png",
+    "whitePng": "logos/wordmark-white.png",
+    "markPng": "logos/mark.png",
+    "favicon": "logos/mark.svg"
+  },
+  "identity": {
+    "archetype": {
+      "primary": "creator",
+      "secondary": "sage",
+      "status": "approved",
+      "rationale": "Creator (the making/looking practice) lead; Sage (perception, the gaze, identity) secondary \u2014 from the artist's own statement."
+    },
+    "essence": "Quiet, editorial, gallery-neutral. Work rooted in looking.",
+    "positioning": "Madrid-based visual artist presenting contemporary painting with curatorial restraint."
+  },
+  "expression": {
+    "source": "client_supplied",
+    "confidence": "high",
+    "status": "approved",
+    "principles": [
+      "Well-curated, spacious, contemporary, professional.",
+      "Give each artwork room to breathe; the work leads and the layout recedes.",
+      "Justify body text.",
+      "Mirror the structure of a professional art portfolio; the website's sections define the document's sections.",
+      "Source every fact, title, and description only from Rebeca's own input and website; never invent copy.",
+      "Attribute each description to its correct artwork."
+    ],
+    "visualAxes": {
+      "density": "spacious",
+      "tone": "editorial",
+      "ornament": "none"
+    },
+    "signatureElements": [
+      "Generous white space on a pure white ground",
+      "Thin black hairline rules",
+      "Thin, even margins on every side; images contained, never bleeding to the edge",
+      "Justified text blocks",
+      "Faithful image reproduction at true aspect ratio"
+    ],
+    "antiPatterns": [
+      "Full-bleed images or any bleed to the page edges",
+      "Stretched or distorted images (any change to the true aspect ratio)",
+      "Drop shadows",
+      "Rounded corners",
+      "Clip art or stock photography",
+      "Invented or unsourced titles, descriptions, or copy"
+    ],
+    "requiredMotifs": [],
+    "evidence": [
+      {
+        "path": ".build-history/BUILD_LOG.md",
+        "kind": "client_email",
+        "sourceAuthority": "client_supplied",
+        "confidence": "high",
+        "surface": "all",
+        "freshness": "current",
+        "note": "Client email 2026-06-16 (subject 'Re: Setting up your branded workspace'): well curated, spacious, contemporary and professional... all the texts justified, the artworks with space to breathe... thin margins in the borders (no bleeding to the sides)... no dropshadows or additional nonsense. do not stretch the images either, keep everything faithful... source all the info ONLY from my imput and website."
+      }
+    ],
+    "visual_grammar": {
+      "backgrounds": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "recovered from expression.signatureElements + antiPatterns + principles; GATE A 2026-07-02 (William)"
+        },
+        "selected": "white-cube",
+        "candidates": [
+          {
+            "id": "white-cube",
+            "label": "White cube",
+            "spec": {
+              "canvases": [
+                {
+                  "name": "white",
+                  "role": "primary-light",
+                  "css": "#FFFFFF"
+                },
+                {
+                  "name": "ink",
+                  "role": "text",
+                  "css": "#000000"
+                }
+              ],
+              "rhythm": "white-dominant \u2014 pure white ground everywhere; NO dark surfaces (the gallery white wall)",
+              "darkFrequency": 0,
+              "photo": {
+                "treatment": "faithful reproduction at true aspect ratio, contained, never bleeding to the edge",
+                "overlay": "none"
+              }
+            },
+            "tokens": [
+              "--canvas-white",
+              "--ink"
+            ],
+            "evidence": {
+              "tier": "source-artifact"
+            }
+          }
+        ],
+        "cssTokens": {
+          "--canvas-white": "#FFFFFF",
+          "--ink": "#000000"
+        }
+      },
+      "gradients": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "ornament:none \u2014 no gradients, ever; depth is white space + thin black hairline, never a wash"
+        }
+      },
+      "grid": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "recovered from expression.signatureElements + antiPatterns + principles; GATE A 2026-07-02 (William)"
+        },
+        "selected": "centered-contained",
+        "candidates": [
+          {
+            "id": "centered-contained",
+            "label": "Centered contained",
+            "spec": {
+              "columns": "contained, centered",
+              "margins": "thin, even margins on every side",
+              "imagePolicy": "contained & centered, never bleeding, true aspect ratio",
+              "text": "justified",
+              "density": "spacious",
+              "symmetry": "centered",
+              "dividers": "thin black hairline rules"
+            },
+            "tokens": [],
+            "evidence": {
+              "tier": "source-artifact"
+            }
+          },
+          {
+            "id": "editorial-asymmetric",
+            "label": "Editorial asymmetric",
+            "spec": {
+              "columns": "image left, justified caption right",
+              "symmetry": "asymmetric",
+              "note": "catalogue/magazine hang"
+            }
+          }
+        ],
+        "cssTokens": {
+          "--content-max": "60rem",
+          "--grid-margin": "7vw",
+          "--rule-hairline": "1px solid #000000"
+        }
+      },
+      "iconography": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "no icon system \u2014 an art portfolio's wayfinding is type + hairline rules; no clip art (explicit anti-pattern)"
+        }
+      },
+      "elevation": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "recovered from expression.signatureElements + antiPatterns + principles; GATE A 2026-07-02 (William)"
+        },
+        "selected": "flat-hairline",
+        "candidates": [
+          {
+            "id": "flat-hairline",
+            "label": "Flat hairline",
+            "spec": {
+              "shadows": "none",
+              "radius": "0 (square corners)",
+              "borders": "1px black hairline frame; images contained, flat on the wall",
+              "surface": "flat",
+              "depth": "via thin black hairline only \u2014 NO drop shadows, NO rounded corners (both explicit anti-patterns)"
+            },
+            "tokens": [],
+            "evidence": {
+              "tier": "source-artifact"
+            }
+          }
+        ],
+        "cssTokens": {
+          "--frame-hairline": "1px solid #000000",
+          "--radius-card": "0"
+        }
+      },
+      "motifs": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "recovered from expression.signatureElements + antiPatterns + principles; GATE A 2026-07-02 (William)"
+        },
+        "selected": "hairline-red-rule",
+        "candidates": [
+          {
+            "id": "hairline-red-rule",
+            "label": "Hairline + red rule",
+            "spec": {
+              "name": "hairline-red-rule",
+              "geometry": "thin black hairline rules are the structural mark; a short RED #fe0200 rule marks the single accent moment (section open / current work)",
+              "meaning": "curatorial restraint \u2014 red is rare and deliberate; the work leads",
+              "marks": [
+                "black-hairline",
+                "red-accent-rule"
+              ]
+            },
+            "tokens": [],
+            "evidence": {
+              "tier": "source-artifact"
+            }
+          },
+          {
+            "id": "hairline-only",
+            "label": "Hairline only",
+            "spec": {
+              "name": "hairline-only",
+              "geometry": "black hairlines only; red reserved strictly for the wordmark",
+              "meaning": "most austere"
+            }
+          },
+          {
+            "id": "red-index",
+            "label": "Red index",
+            "spec": {
+              "name": "red-index",
+              "geometry": "red used as a small catalogue index/number beside each work"
+            }
+          }
+        ],
+        "cssTokens": {
+          "--accent-red": "#fe0200",
+          "--accent-rule": "2px solid #fe0200"
+        }
+      },
+      "motion": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "static \u2014 the work leads; the layout and any motion recede; no motion (William, GATE A 2026-07-02)"
+        }
+      },
+      "patterns": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "source-artifact",
+          "source": "no pattern system \u2014 texture is white space + thin black hairlines only"
+        }
+      },
+      "photo": {
+        "status": "n-a",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "faithful reproduction at true aspect ratio, contained; handled by the image system / images.manifest, not a grammar treatment"
+        }
+      }
+    }
+  },
+  "presentation": {
+    "aspectRatio": "4:3"
+  },
+  "document": {
+    "headingColor": "#000000",
+    "tableHeaderColor": "#000000",
+    "paperSize": "A4",
+    "margins": {
+      "top": "0.71in",
+      "bottom": "0.71in",
+      "left": "0.71in",
+      "right": "0.71in"
+    }
+  },
+  "formatting": {
+    "autoContrastText": true,
+    "accentCycleColors": [
+      "#fe0200"
+    ]
+  },
+  "templates": {
+    "docx": {
+      "styles": "templates/docx/styles.docx",
+      "letterhead": "templates/docx/letterhead.docx"
+    },
+    "pptx": {
+      "cover": "templates/pptx/cover.html",
+      "sectionDivider": "templates/pptx/section-divider.html",
+      "content": "templates/pptx/content.html",
+      "closing": "templates/pptx/closing.html",
+      "footerBar": "templates/pptx/footer-bar.html"
+    },
+    "pdf": {
+      "cover": "templates/pdf/cover.html",
+      "sectionDivider": "templates/pdf/section-divider.html",
+      "footer": "templates/pdf/footer.html"
+    },
+    "html": {
+      "emailSignature": "templates/html/email-signature.html",
+      "signatureFragments": "templates/html/signatures/"
+    }
+  }
+}

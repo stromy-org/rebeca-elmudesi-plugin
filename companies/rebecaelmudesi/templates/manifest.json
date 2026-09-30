@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "generatedAt": "2026-06-17",
+  "note": "Finished, hand-authored templates for Rebeca Elmúdesi (épuré artist brand). Supersedes the generic Phase-5 pilot scaffolds (20 generic cards / 12 placeholder signatures removed as off-brand / placeholder-filled).",
+  "templates": {
+    "docx": { "styles": "templates/docx/styles.docx", "letterhead": "templates/docx/letterhead.docx" },
+    "pptx": { "cover": "templates/pptx/cover.html", "sectionDivider": "templates/pptx/section-divider.html", "content": "templates/pptx/content.html", "closing": "templates/pptx/closing.html", "footerBar": "templates/pptx/footer-bar.html", "aspectRatio": "4:3" },
+    "pdf": { "cover": "templates/pdf/cover.html", "sectionDivider": "templates/pdf/section-divider.html", "footer": "templates/pdf/footer.html" },
+    "html": { "emailSignature": "templates/html/email-signature.html", "signatureFragments": "templates/html/signatures/" },
+    "businessCards": { "source": "business-cards/source/", "review": "business-cards/review/business-cards.html", "formats": ["EU-85x55"], "front": "business-cards/source/rebeca-card-eu-front.svg", "back": "business-cards/source/rebeca-card-eu-back.svg" }
+  }
+}

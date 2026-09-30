@@ -1,0 +1,29 @@
+<!--
+  Rebeca Elmúdesi PDF cover shell — consumed by format-pdf-hd.
+  ÉPURÉ: white ground, black text, hairline rule, NO bleed/overlay (her anti-patterns).
+  Injected: {{TOKENS_CSS}} {{FONT_FACES}} {{LOGO_URL}} {{OVERLINE}} {{TITLE}} {{SUBTITLE}} {{META_LEFT}} {{META_MID}} {{META_RIGHT}}
+-->
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+@page { size: A4; margin: 0; }
+{{TOKENS_CSS}}
+{{FONT_FACES}}
+html,body{margin:0;padding:0}
+body{width:210mm;height:297mm;background:var(--brand-background,#fff);color:var(--brand-text,#000);
+ font-family:var(--font-body,Helvetica,Arial,sans-serif);position:relative}
+.frame{position:absolute;inset:24mm}
+.logo img{height:14mm;width:auto}
+.overline{font-size:10pt;letter-spacing:.18em;text-transform:uppercase;color:var(--brand-text-light,#b4b4b4);margin-top:60mm}
+h1{font-family:var(--font-heading);font-weight:400;font-size:34pt;line-height:1.1;margin:6mm 0 0;max-width:150mm}
+.rule{height:1px;background:var(--brand-line,#000);width:40mm;margin-top:8mm}
+.subtitle{font-size:13pt;color:var(--brand-text-light,#b4b4b4);margin-top:6mm;max-width:140mm}
+.meta{position:absolute;left:24mm;right:24mm;bottom:24mm;display:flex;justify-content:space-between;
+ font-size:9pt;color:var(--brand-text-light,#b4b4b4)}
+</style></head><body>
+ <div class="frame">
+  <div class="logo"><img src="{{LOGO_URL}}" alt=""></div>
+  <div class="overline">{{OVERLINE}}</div>
+  <h1>{{TITLE}}</h1><div class="rule"></div>
+  <p class="subtitle">{{SUBTITLE}}</p>
+ </div>
+ <div class="meta"><span>{{META_LEFT}}</span><span>{{META_MID}}</span><span>{{META_RIGHT}}</span></div>
+</body></html>

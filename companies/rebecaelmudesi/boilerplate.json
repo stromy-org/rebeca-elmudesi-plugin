@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schema/boilerplate.schema.json",
+  "$comment": "Rebeca Elmúdesi fixed cross-deliverable strings. Artist sole-practice — public-facing portfolio register, minimal confidentiality. Edit once to update every newly-rendered deck/doc/PDF footer.",
+  "version": "1.0",
+  "website": "instagram.com/elmudesi.studio",
+  "email": "rebeca.elmudesi@gmail.com",
+  "footer": {
+    "deck": "Rebeca Elmúdesi · {{page}} / {{pages}}",
+    "doc": "Rebeca Elmúdesi · {{document.title}}",
+    "showLogo": true,
+    "logoVariant": "mark"
+  },
+  "confidentiality": {
+    "public": "",
+    "internal": "",
+    "confidential": "Confidential — price list, not for circulation",
+    "draft": "Draft",
+    "deck": "",
+    "doc": ""
+  },
+  "legal": {
+    "copyright": "© {{year}} Rebeca Elmúdesi. All works and images reproduced by permission of the artist.",
+    "trademark": ""
+  },
+  "contact_block": {
+    "en": "Rebeca Elmúdesi\nMadrid, Spain\nrebeca.elmudesi@gmail.com · @elmudesi.studio"
+  }
+}
