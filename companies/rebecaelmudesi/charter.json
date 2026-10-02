@@ -29,6 +29,7 @@
     "error": "#fe0200"
   },
   "fonts": {
+    "note": "William confirmed on 2026-10-02 that web delivery intentionally uses the existing Helvetica, Arial, sans-serif fallback. No TeX Gyre Heros webfont mirror is required; TeX Gyre Heros remains the document face and Arial remains the constrained-renderer webSafe fallback.",
     "heading": {
       "family": "TeX Gyre Heros",
       "fallback": "Helvetica, Arial, sans-serif",
