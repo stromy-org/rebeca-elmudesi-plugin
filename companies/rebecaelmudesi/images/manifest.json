@@ -17,7 +17,13 @@
       "dimensions": "130 × 195 cm",
       "year": "2025",
       "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/habitacion-que-habla/01-cover.jpg",
-      "confidence": "high"
+      "confidence": "high",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      }
     },
     {
       "file": "si-me-ves-te-veo--lo-estamos-viendo-todo.jpg",
@@ -32,7 +38,13 @@
       "dimensions": "100 × 130 cm",
       "year": "2025",
       "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/lo-estamos-viendo-todo/01-cover.jpg",
-      "confidence": "high"
+      "confidence": "high",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.55,
+          "y": 0.4
+        }
+      }
     },
     {
       "file": "si-me-ves-te-veo--the-naked-eye.jpg",
@@ -47,7 +59,13 @@
       "dimensions": "100 × 130 cm",
       "year": "2025",
       "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/the-naked-eye/01-cover.jpg",
-      "confidence": "high"
+      "confidence": "high",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.55,
+          "y": 0.4
+        }
+      }
     },
     {
       "file": "si-me-ves-te-veo--de-narices.jpg",
@@ -62,7 +80,13 @@
       "dimensions": "81 × 61 cm",
       "year": "2025",
       "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/de-narices/01-cover.jpg",
-      "confidence": "high"
+      "confidence": "high",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.7,
+          "y": 0.38
+        }
+      }
     },
     {
       "file": "si-me-ves-te-veo--metro-de-madrid.jpg",
@@ -77,7 +101,13 @@
       "dimensions": "60 × 40 cm",
       "year": "2025",
       "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/metro-de-madrid/01-cover.jpg",
-      "confidence": "high"
+      "confidence": "high",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      }
     },
     {
       "file": "amsterdam--mouthful.jpg",
@@ -91,7 +121,13 @@
       "medium": "Oil pastel on wood",
       "dimensions": "37.5 × 30.2 cm (each panel)",
       "source": "rebeca-elmudesi-website/src/assets/works/amsterdam/amsterdam-mouthful/01-cover.jpg",
-      "confidence": "high"
+      "confidence": "high",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.45
+        }
+      }
     },
     {
       "file": "amsterdam--landscape-1.jpg",
@@ -106,7 +142,13 @@
       "medium": "Oil pastel on wood",
       "dimensions": "120 × 31 cm",
       "source": "rebeca-elmudesi-website/src/assets/works/amsterdam/amsterdam-landscape-1/01-cover.jpg",
-      "confidence": "high"
+      "confidence": "high",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
     },
     {
       "file": "amsterdam--natures-paintbrush-blue.jpg",
@@ -120,7 +162,13 @@
       "medium": "Oil pastel on wood",
       "dimensions": "50 × 70 cm",
       "source": "rebeca-elmudesi-website/src/assets/works/amsterdam/natures-paintbrush-blue/01-cover.jpg",
-      "confidence": "high"
+      "confidence": "high",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
     },
     {
       "file": "naive-optimism--everything-i-will-ever-need.jpg",
@@ -135,7 +183,13 @@
       "dimensions": "61 × 76.6 cm",
       "year": "2024",
       "source": "rebeca-elmudesi-website/src/assets/works/naive-optimism/01-everything-i-will-ever-need.jpg",
-      "confidence": "high"
+      "confidence": "high",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
     },
     {
       "file": "naive-optimism--what-are-you-looking-at.jpg",
@@ -150,7 +204,13 @@
       "dimensions": "40 × 51 cm",
       "year": "2024",
       "source": "rebeca-elmudesi-website/src/assets/works/naive-optimism/06-what-are-you-looking-at.jpg",
-      "confidence": "high"
+      "confidence": "high",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      }
     }
   ]
 }
