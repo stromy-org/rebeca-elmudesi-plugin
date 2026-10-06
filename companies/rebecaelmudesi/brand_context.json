@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "668663ee96b9c2798dc34643ba34e0038c125422e1157cf77efd931831448273",
+    "charterSha": "3ae212acd4258112be809817c963c9bbe820e8d31c5874a0656e62e2b421cdba",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -377,7 +377,13 @@
         "dimensions": "130 × 195 cm",
         "year": "2025",
         "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/habitacion-que-habla/01-cover.jpg",
-        "confidence": "high"
+        "confidence": "high",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.45
+          }
+        }
       },
       {
         "file": "si-me-ves-te-veo--lo-estamos-viendo-todo.jpg",
@@ -392,7 +398,13 @@
         "dimensions": "100 × 130 cm",
         "year": "2025",
         "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/lo-estamos-viendo-todo/01-cover.jpg",
-        "confidence": "high"
+        "confidence": "high",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.55,
+            "y": 0.4
+          }
+        }
       },
       {
         "file": "si-me-ves-te-veo--the-naked-eye.jpg",
@@ -407,7 +419,13 @@
         "dimensions": "100 × 130 cm",
         "year": "2025",
         "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/the-naked-eye/01-cover.jpg",
-        "confidence": "high"
+        "confidence": "high",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.55,
+            "y": 0.4
+          }
+        }
       },
       {
         "file": "si-me-ves-te-veo--de-narices.jpg",
@@ -422,7 +440,13 @@
         "dimensions": "81 × 61 cm",
         "year": "2025",
         "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/de-narices/01-cover.jpg",
-        "confidence": "high"
+        "confidence": "high",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.7,
+            "y": 0.38
+          }
+        }
       },
       {
         "file": "si-me-ves-te-veo--metro-de-madrid.jpg",
@@ -437,7 +461,13 @@
         "dimensions": "60 × 40 cm",
         "year": "2025",
         "source": "rebeca-elmudesi-website/src/assets/works/si-me-ves-te-veo/metro-de-madrid/01-cover.jpg",
-        "confidence": "high"
+        "confidence": "high",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.45
+          }
+        }
       },
       {
         "file": "amsterdam--mouthful.jpg",
@@ -451,7 +481,13 @@
         "medium": "Oil pastel on wood",
         "dimensions": "37.5 × 30.2 cm (each panel)",
         "source": "rebeca-elmudesi-website/src/assets/works/amsterdam/amsterdam-mouthful/01-cover.jpg",
-        "confidence": "high"
+        "confidence": "high",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.45
+          }
+        }
       },
       {
         "file": "amsterdam--landscape-1.jpg",
@@ -466,7 +502,13 @@
         "medium": "Oil pastel on wood",
         "dimensions": "120 × 31 cm",
         "source": "rebeca-elmudesi-website/src/assets/works/amsterdam/amsterdam-landscape-1/01-cover.jpg",
-        "confidence": "high"
+        "confidence": "high",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        }
       },
       {
         "file": "amsterdam--natures-paintbrush-blue.jpg",
@@ -480,7 +522,13 @@
         "medium": "Oil pastel on wood",
         "dimensions": "50 × 70 cm",
         "source": "rebeca-elmudesi-website/src/assets/works/amsterdam/natures-paintbrush-blue/01-cover.jpg",
-        "confidence": "high"
+        "confidence": "high",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        }
       },
       {
         "file": "naive-optimism--everything-i-will-ever-need.jpg",
@@ -495,7 +543,13 @@
         "dimensions": "61 × 76.6 cm",
         "year": "2024",
         "source": "rebeca-elmudesi-website/src/assets/works/naive-optimism/01-everything-i-will-ever-need.jpg",
-        "confidence": "high"
+        "confidence": "high",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        }
       },
       {
         "file": "naive-optimism--what-are-you-looking-at.jpg",
@@ -510,7 +564,13 @@
         "dimensions": "40 × 51 cm",
         "year": "2024",
         "source": "rebeca-elmudesi-website/src/assets/works/naive-optimism/06-what-are-you-looking-at.jpg",
-        "confidence": "high"
+        "confidence": "high",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.5
+          }
+        }
       }
     ]
   },
@@ -584,6 +644,6 @@
       "photo"
     ],
     "images_count": 10,
-    "sha256": "d95213a50d6e3fef5179dbf0e24737559a275095cbbe1d8557f342955bce0eb0"
+    "sha256": "2b0ea0a78291a568ba174a6d42c052a986880ae3e83f575a9c35b34182182fe7"
   }
 }

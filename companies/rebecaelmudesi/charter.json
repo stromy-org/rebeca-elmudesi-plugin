@@ -13,7 +13,8 @@
     "archetype": {
       "primary": "creator",
       "secondary": "sage"
-    }
+    },
+    "fontEmbed": "optional"
   },
   "colors": {
     "primary": "#000000",
