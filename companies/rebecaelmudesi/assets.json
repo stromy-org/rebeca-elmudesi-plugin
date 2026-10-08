@@ -20,6 +20,11 @@
   ],
   "logos": [
     {
+      "name": "favicon.svg",
+      "sha256": "5cff6b410d3b35df0c6d5bc2e6b45668cf7fb4a2faa93d17126ff341feb291d7",
+      "mime": "image/svg+xml"
+    },
+    {
       "name": "icon_dark.svg",
       "sha256": "13402c1031bd0f64485e1b0933c32bedcc9c2a8b5aac7dd63081e9b61190b907",
       "mime": "image/svg+xml"
