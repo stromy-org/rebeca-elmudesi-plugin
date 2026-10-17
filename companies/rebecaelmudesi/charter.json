@@ -383,5 +383,42 @@
       "emailSignature": "templates/html/email-signature.html",
       "signatureFragments": "templates/html/signatures/"
     }
+  },
+  "website": {
+    "archetype": "creator",
+    "aesthetic": "minimalist",
+    "layout": {
+      "heroStyle": "image-mosaic",
+      "gridSystem": "fixed-index-plus-grid",
+      "flowDirection": "side-index"
+    },
+    "texture": {
+      "backgroundTreatment": "solid",
+      "surfaceFinish": "matte",
+      "borderStyle": "none",
+      "shadowDepth": "none",
+      "cornerRadius": "sharp",
+      "overlayStyle": "none",
+      "patternDensity": "none"
+    },
+    "typography": {
+      "headingStyle": "neo-grotesque"
+    },
+    "components": {
+      "navigation": "fixed-side-index",
+      "cards": "image-only",
+      "imagePresentation": "mosaic-grid"
+    },
+    "pages": {
+      "home": {
+        "enabled": true,
+        "sections": [
+          {
+            "type": "hero",
+            "variant": "image-mosaic"
+          }
+        ]
+      }
+    }
   }
 }
