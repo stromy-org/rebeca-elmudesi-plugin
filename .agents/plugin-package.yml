@@ -8,7 +8,7 @@ schema_version: 1
 identity:
   name: rebeca-elmudesi
   display_name: Rebeca Elmúdesi
-  version: 0.3.40
+  version: 0.3.41
   description: Plugin for Rebeca Elmudesi — branded presentations and documents about her art via stromy-format,
     plus self-service website and brand asset editing via asset-broker
   author:
@@ -35,9 +35,7 @@ portable_capabilities:
     - format-docx-hd
     - format-guide
     - format-html-hd
-    - format-html-reveal
     - format-i18n
-    - format-mermaid
     - format-motion
     - format-pdf
     - format-pdf-hd
@@ -60,9 +58,7 @@ skills:
   - format-docx-hd
   - format-guide
   - format-html-hd
-  - format-html-reveal
   - format-i18n
-  - format-mermaid
   - format-motion
   - format-pdf
   - format-pdf-hd
