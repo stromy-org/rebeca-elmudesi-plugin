@@ -16,6 +16,12 @@
       "url": "https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp",
       "_consumed_by": ["claude"],
       "_connector": true
+    },
+    "toolkit": {
+      "transport": "http",
+      "url": "https://toolkit-mcp.agreeablesand-310c38a5.swedencentral.azurecontainerapps.io/mcp",
+      "_consumed_by": ["claude"],
+      "_connector": true
     }
   }
 }

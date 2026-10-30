@@ -8,7 +8,7 @@ schema_version: 1
 identity:
   name: rebeca-elmudesi
   display_name: Rebeca Elmúdesi
-  version: 0.3.42
+  version: 0.3.43
   description: Plugin for Rebeca Elmudesi — branded presentations and documents about her art via stromy-format,
     plus self-service website and brand asset editing via asset-broker
   author:
@@ -105,6 +105,13 @@ skills:
     capability: cowork-workspace
     reason: Reads and writes the client's SharePoint workspace record through workspace-scoped tools that
       exist only in a Cowork workspace session.
+  - skill: kit-prospect-contact
+    providers:
+    - claude
+    capability: toolkit-connector
+    reason: 'Hosted on the OAuth-gated ''toolkit'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
 marketplace:
   name: rebeca-elmudesi-marketplace
   repository: https://github.com/stromy-org/rebeca-elmudesi-marketplace

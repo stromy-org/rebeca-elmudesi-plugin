@@ -18,6 +18,10 @@ mcp_servers:
   name: asset-broker
   transport: http
   url: https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp
+- connector: true
+  name: toolkit
+  transport: http
+  url: https://toolkit-mcp.agreeablesand-310c38a5.swedencentral.azurecontainerapps.io/mcp
 plugin_name: Rebeca Elmudesi Asset Editor
 plugin_slug: rebeca-elmudesi
 provider_targets: openai,codex,claude,cursor,copilot,vscode,kiro,gemini
