@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "845752a5c6f61bbe92a4afedc446f3d408f390ecb1be103e34832effae6ca94e",
+    "charterSha": "cf066f6b6be8f6ffb4718fe48a260bc289c957bef03a9e82340306c24c956f30",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -359,6 +359,25 @@
       "bottom": "0.71in",
       "left": "0.71in",
       "right": "0.71in"
+    },
+    "template": {
+      "file": "templates/docx/styles.docx",
+      "styleSpec": "templates/docx/styles.spec.json",
+      "styleMap": {
+        "title": "Title",
+        "h1": "Heading1",
+        "h2": "Heading2",
+        "h3": "Heading3",
+        "body": "BodyText",
+        "caption": "Caption",
+        "quote": "Quote"
+      },
+      "letterheadFile": "templates/docx/letterhead.docx",
+      "letterheadSpec": "templates/docx/letterhead.spec.json",
+      "source": {
+        "migratedFrom": "templates.docx",
+        "plan": "ORG-PLAN-506"
+      }
     }
   },
   "images": {
@@ -649,8 +668,8 @@
   },
   "templates": {
     "docx": {
-      "styles": "templates/docx/styles.docx",
-      "letterhead": "templates/docx/letterhead.docx"
+      "letterhead": "templates/docx/letterhead.docx",
+      "styles": "templates/docx/styles.docx"
     }
   },
   "fallbacksUsed": [],
@@ -679,11 +698,87 @@
       "lineHeight": 1.22
     }
   },
+  "spreadsheet": {
+    "headerFill": "#000000",
+    "headerFont": "#FFFFFF",
+    "zebra": "#ffffff",
+    "numberFormats": {
+      "currency": "#,##0.00",
+      "percent": "0.0%",
+      "integer": "#,##0",
+      "decimal": "#,##0.00",
+      "date": "yyyy-mm-dd"
+    },
+    "inputStyle": {
+      "fontColor": "#1F3FBF",
+      "fill": "#ffffff"
+    },
+    "calcStyle": {
+      "fontColor": "#000000"
+    },
+    "outputStyle": {
+      "fontColor": "#000000",
+      "bold": true
+    },
+    "tableStyle": "TableStyleMedium2"
+  },
+  "charts": {
+    "palette": {
+      "categorical": [
+        "#000000",
+        "#FE0200",
+        "#2E7D4F",
+        "#B58900",
+        "#595959",
+        "#FE5B59"
+      ],
+      "sequential": [
+        "#D9D9D9",
+        "#B2B2B2",
+        "#808080",
+        "#4C4C4C",
+        "#262626",
+        "#000000"
+      ],
+      "diverging": [
+        "#FE0200",
+        "#EF7170",
+        "#E0E0E0",
+        "#87AE98",
+        "#2E7D4F"
+      ],
+      "sentiment": {
+        "positive": "#2E7D4F",
+        "negative": "#FE0200",
+        "neutral": "#909090"
+      }
+    },
+    "font": {
+      "family": "TeX Gyre Heros",
+      "size": 12
+    },
+    "grid": {
+      "color": "#ffffff",
+      "width": 1
+    },
+    "highlight": "#FE0200",
+    "muted": "#909090",
+    "derivation": {
+      "tier": "tint",
+      "counts": {
+        "brand": 4,
+        "tint": 2,
+        "neutral": 0,
+        "fallback": 0
+      }
+    }
+  },
   "integrity": {
     "compiler": "brand_compile.py",
     "compiler_version": "1.0",
     "key_set": [
       "boilerplate",
+      "charts",
       "client_slug",
       "colors",
       "document",
@@ -698,6 +793,7 @@
       "plotly_theme",
       "presentation",
       "schemaVersion",
+      "spreadsheet",
       "surfaceExpression",
       "templates",
       "tier",
@@ -719,6 +815,6 @@
       "photo"
     ],
     "images_count": 10,
-    "sha256": "1cec47a2080e2527b112f3493763583a651973860bfbf4db5634b8025865cf48"
+    "sha256": "f276dc70513827e10858ad0fdd7e70422910c18280af7817de41db0b0d7f57b3"
   }
 }

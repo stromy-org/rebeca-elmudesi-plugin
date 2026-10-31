@@ -8,6 +8,10 @@
     "asset-broker": {
       "type": "http",
       "url": "https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp"
+    },
+    "toolkit": {
+      "type": "http",
+      "url": "https://toolkit-mcp.agreeablesand-310c38a5.swedencentral.azurecontainerapps.io/mcp"
     }
   }
 }
