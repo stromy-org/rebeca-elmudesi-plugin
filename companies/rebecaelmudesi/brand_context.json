@@ -773,6 +773,92 @@
       }
     }
   },
+  "libraryHandles": [
+    {
+      "path": "business-cards/source/rebeca-card-eu-back.svg",
+      "sha256": "d823ca050787ed4c6dea08dc1c7e0cf79d1cdebea5e36aac980cf7c720d1511d",
+      "mime": "image/svg+xml",
+      "libraryId": "business-cards-source-rebeca-card-eu-back.svg"
+    },
+    {
+      "path": "business-cards/source/rebeca-card-eu-front.svg",
+      "sha256": "6a13036238b347a9e972806c814c72f32f1cd10ac7a2de66a5e46c6100b438b1",
+      "mime": "image/svg+xml",
+      "libraryId": "business-cards-source-rebeca-card-eu-front.svg"
+    },
+    {
+      "path": "images/amsterdam--landscape-1.jpg",
+      "sha256": "6bf2d9ef49274c4bfc3297dfaa308e0ef4e1b236f210984af25fd173a0b90eb3",
+      "mime": "image/jpeg",
+      "libraryId": "images-amsterdam-landscape-1.jpg"
+    },
+    {
+      "path": "images/amsterdam--mouthful.jpg",
+      "sha256": "afcbd6889aaecc7f5c9e7631b9b1357c693f84aef07378f853a572466e13271f",
+      "mime": "image/jpeg",
+      "libraryId": "images-amsterdam-mouthful.jpg"
+    },
+    {
+      "path": "images/amsterdam--natures-paintbrush-blue.jpg",
+      "sha256": "280dbdc5736fb3d79646ca6a09245af61f9d65f68fbaf01beb1af4d1b11f3512",
+      "mime": "image/jpeg",
+      "libraryId": "images-amsterdam-natures-paintbrush-blue.jpg"
+    },
+    {
+      "path": "images/naive-optimism--everything-i-will-ever-need.jpg",
+      "sha256": "19d6f66f9e6f074fe59b235fe8ca3231f92eab109282e8f7693f0638bd02b39e",
+      "mime": "image/jpeg",
+      "libraryId": "images-naive-optimism-everything-i-will-ever-need.jpg"
+    },
+    {
+      "path": "images/naive-optimism--what-are-you-looking-at.jpg",
+      "sha256": "6858128e7916c758601cdedeffd1b229f876bb2ea93327e3e1dbc21facc26e63",
+      "mime": "image/jpeg",
+      "libraryId": "images-naive-optimism-what-are-you-looking-at.jpg"
+    },
+    {
+      "path": "images/si-me-ves-te-veo--de-narices.jpg",
+      "sha256": "14882c6cb7d0c2f19a6670ce8c41af0b008fabd281e61776e6658d9bcba2e5e9",
+      "mime": "image/jpeg",
+      "libraryId": "images-si-me-ves-te-veo-de-narices.jpg"
+    },
+    {
+      "path": "images/si-me-ves-te-veo--habitacion-que-habla.jpg",
+      "sha256": "6ba96b02a6bb686bb0c7be8d2152a4eae460bebf40690ecb88e3671a0db8cf84",
+      "mime": "image/jpeg",
+      "libraryId": "images-si-me-ves-te-veo-habitacion-que-habla.jpg"
+    },
+    {
+      "path": "images/si-me-ves-te-veo--lo-estamos-viendo-todo.jpg",
+      "sha256": "25d29b87c0342853ff2657a7d0931f1bdec2b7770ab17c140124d1bb5097dea9",
+      "mime": "image/jpeg",
+      "libraryId": "images-si-me-ves-te-veo-lo-estamos-viendo-todo.jpg"
+    },
+    {
+      "path": "images/si-me-ves-te-veo--metro-de-madrid.jpg",
+      "sha256": "21aed91ca2af876f9889699358d0958b9b0bff9a39b71b708578a3d3bd769f3a",
+      "mime": "image/jpeg",
+      "libraryId": "images-si-me-ves-te-veo-metro-de-madrid.jpg"
+    },
+    {
+      "path": "images/si-me-ves-te-veo--the-naked-eye.jpg",
+      "sha256": "5ccd3a9073af01c361a222aedcbd6a6ac9648c838f8d266299eecb6ecf8c6759",
+      "mime": "image/jpeg",
+      "libraryId": "images-si-me-ves-te-veo-the-naked-eye.jpg"
+    },
+    {
+      "path": "templates/docx/letterhead.docx",
+      "sha256": "14ff198181a11f6a7b17185a9568a91f69d4f23e447d5ced5c8217fb83b99d07",
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "libraryId": "templates-docx-letterhead.docx"
+    },
+    {
+      "path": "templates/docx/styles.docx",
+      "sha256": "664ff07100502e4d4475d9673cad51e1d898728c2eab9b02ca76d00ec11d3201",
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "libraryId": "templates-docx-styles.docx"
+    }
+  ],
   "integrity": {
     "compiler": "brand_compile.py",
     "compiler_version": "1.0",
@@ -789,6 +875,7 @@
       "generatedFrom",
       "identity",
       "images",
+      "libraryHandles",
       "logo",
       "plotly_theme",
       "presentation",
@@ -815,6 +902,6 @@
       "photo"
     ],
     "images_count": 10,
-    "sha256": "f276dc70513827e10858ad0fdd7e70422910c18280af7817de41db0b0d7f57b3"
+    "sha256": "dbed0b2729e398f5def99151664a5b6e91a79b6a23b2810b2017dc37dbdebafa"
   }
 }
