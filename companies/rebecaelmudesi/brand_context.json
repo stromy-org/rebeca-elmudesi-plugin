@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "cf066f6b6be8f6ffb4718fe48a260bc289c957bef03a9e82340306c24c956f30",
+    "charterSha": "7a283ec798a1a15c8f2c69be395f25c80ab02cf5f70e1610e1412f03e998c8ce",
     "compiler": "1.0"
   },
   "tier": "producer",
@@ -377,6 +377,35 @@
       "source": {
         "migratedFrom": "templates.docx",
         "plan": "ORG-PLAN-506"
+      }
+    },
+    "masters": {
+      "default": {
+        "size": "A4",
+        "margins": {
+          "top": "0.71in",
+          "right": "0.71in",
+          "bottom": "0.71in",
+          "left": "0.71in"
+        },
+        "footer": {
+          "left": "{{BRAND_NAME}}",
+          "center": "{{CONFIDENTIALITY}}"
+        },
+        "pageNumbers": {
+          "format": "{{page}} / {{pages}}",
+          "position": "bottom-right"
+        },
+        "html": {
+          "content": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><style>\n@page { size: A4; margin: 0; }\n{{TOKENS_CSS}}\n{{FONT_FACES}}\nhtml,body{margin:0;padding:0}\nbody{width:210mm;height:297mm;background:var(--brand-background);color:var(--brand-text);\n font-family:var(--font-body,Helvetica,Arial,sans-serif);position:relative}\n.frame{position:absolute;inset:24mm}\n.logo img{height:14mm;width:auto}\n.overline{font-size:10pt;letter-spacing:.18em;text-transform:uppercase;color:var(--brand-text-light);margin-top:60mm}\nh1{font-family:var(--sf-font-heading);font-weight:var(--sf-w-heading);font-size:34pt;line-height:1.1;margin:6mm 0 0;max-width:150mm}\n.rule{height:1px;background:var(--brand-line);width:40mm;margin-top:8mm}\n.subtitle{font-size:13pt;color:var(--brand-text-light);margin-top:6mm;max-width:140mm}\n.meta{position:absolute;left:24mm;right:24mm;bottom:24mm;display:flex;justify-content:space-between;\n font-size:9pt;color:var(--brand-text-light)}\n</style></head><body>\n <div class=\"frame\">\n  <div class=\"logo\"><img src=\"{{LOGO_URL}}\" alt=\"\"></div>\n  <div class=\"overline\">{{OVERLINE}}</div>\n  <h1>{{TITLE}}</h1><div class=\"rule\"></div>\n  <p class=\"subtitle\">{{SUBTITLE}}</p>\n </div>\n <div class=\"meta\"><span>{{META_LEFT}}</span><span>{{META_MID}}</span><span>{{META_RIGHT}}</span></div>\n</body></html>",
+          "sha256": "386cc027e861f2f20fb5ad4b0ec03348b49f7ef7f80c76cfb21d898387f41ebe",
+          "source": "templates/pdf/cover.html"
+        },
+        "divider": {
+          "content": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><style>\n@page { size: A4; margin: 0; }\n{{TOKENS_CSS}}\n{{FONT_FACES}}\nhtml,body{margin:0;padding:0}\nbody{width:210mm;height:297mm;background:var(--brand-background);color:var(--brand-text);\n font-family:var(--font-body,Helvetica,Arial,sans-serif);position:relative}\n.wrap{position:absolute;inset:24mm;display:flex;flex-direction:column;justify-content:center}\n.part{font-size:10pt;letter-spacing:.18em;text-transform:uppercase;color:var(--brand-accent)}\n.rule{height:1px;background:var(--brand-line);margin:6mm 0;width:100%}\nh2{font-family:var(--sf-font-heading);font-weight:var(--sf-w-heading);font-size:30pt;margin:0;max-width:150mm}\n</style></head><body><div class=\"wrap\">\n <div class=\"part\">{{PART_LABEL}}</div><div class=\"rule\"></div>\n <h2>{{SECTION_TITLE}}</h2>\n</div></body></html>",
+          "sha256": "2eb62692052bfc1defc1413eedf3d8f6d9b2f6da45fc7bfe3760677d0e51e381",
+          "source": "templates/pdf/section-divider.html"
+        }
       }
     }
   },
@@ -902,6 +931,6 @@
       "photo"
     ],
     "images_count": 10,
-    "sha256": "dbed0b2729e398f5def99151664a5b6e91a79b6a23b2810b2017dc37dbdebafa"
+    "sha256": "155eaf460e715da266a88b8b0a50edfc81c68064fc901e3339deb1c45c00e1a9"
   }
 }
